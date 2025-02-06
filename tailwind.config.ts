@@ -20,6 +20,9 @@ export default {
     },
     extend: {
       colors: {
+        border: {
+          DEFAULT: "hsl(var(--border))",
+        },
         sand: {
           50: "#FDF8F3",
           100: "#FCF1E7",
