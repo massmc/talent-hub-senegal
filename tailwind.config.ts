@@ -23,6 +23,8 @@ export default {
         border: {
           DEFAULT: "hsl(var(--border))",
         },
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         sand: {
           50: "#FDF8F3",
           100: "#FCF1E7",
