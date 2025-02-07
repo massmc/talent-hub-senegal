@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -112,19 +111,6 @@ const Index = () => {
                 </Button>
               </motion.div>
             </div>
-            
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="hidden md:block w-48 ml-8"
-            >
-              <img 
-                src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
-                alt="Target arrow animation"
-                className="w-full"
-              />
-            </motion.div>
           </div>
         </div>
       </section>
