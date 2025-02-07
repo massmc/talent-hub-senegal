@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -30,7 +29,10 @@ const Index = () => {
 
             {/* Auth Buttons */}
             <div className="flex items-center space-x-4">
-              <Button variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button 
+                variant="outline" 
+                className="text-white border-emerald-400 hover:bg-emerald-400 hover:text-black"
+              >
                 Créer un compte
               </Button>
               <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
