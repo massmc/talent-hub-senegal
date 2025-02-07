@@ -97,10 +97,10 @@ const Index = () => {
                 <Input 
                   type="text"
                   placeholder="Essayez 'Java', 'React', 'Python'..."
-                  className="pl-10 py-6 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
+                  className="pl-10 py-3 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
                 />
               </div>
-              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8">
+              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
                 Rechercher
               </Button>
             </motion.div>
@@ -158,3 +158,4 @@ const menuItems = [
 ];
 
 export default Index;
+
