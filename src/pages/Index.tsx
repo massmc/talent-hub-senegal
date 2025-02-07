@@ -1,12 +1,47 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Star, Users, Briefcase, CheckCircle } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Carousel */}
+        <div className="absolute inset-0 w-full h-full">
+          <Carousel
+            opts={{
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full h-full"
+          >
+            <CarouselContent>
+              {backgroundImages.map((image, index) => (
+                <CarouselItem key={index} className="w-full h-full">
+                  <div
+                    className="w-full h-full bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url(${image})`,
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-black/50" />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+
         <div className="container px-4 mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -17,10 +52,10 @@ const Index = () => {
             <span className="inline-block px-4 py-2 bg-sand-100 text-sand-500 rounded-full text-sm font-medium mb-6 animate-fade-up">
               Bienvenue sur SenduTalent
             </span>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight animate-fade-up">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up">
               Découvrez les Meilleurs Talents du Sénégal
             </h1>
-            <p className="text-xl text-gray-600 mb-8 animate-fade-up">
+            <p className="text-xl text-gray-200 mb-8 animate-fade-up">
               La première plateforme de mise en relation entre talents sénégalais et opportunités professionnelles
             </p>
             <motion.div
@@ -130,6 +165,13 @@ const Index = () => {
     </div>
   );
 };
+
+const backgroundImages = [
+  "/slides/senegal-business.jpg",
+  "/slides/dakar-skyline.jpg",
+  "/slides/tech-team.jpg",
+  "/slides/office-workers.jpg",
+];
 
 const features = [
   {
