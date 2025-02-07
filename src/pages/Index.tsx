@@ -32,7 +32,7 @@ const Index = () => {
             <div className="flex items-center space-x-4">
               <Button 
                 variant="outline" 
-                className="text-sand-100 border-sand-400 hover:bg-sand-400 hover:text-sand-900"
+                className="bg-black text-white border-2 border-white hover:bg-black/80"
               >
                 Créer un compte
               </Button>
