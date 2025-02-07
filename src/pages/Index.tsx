@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -45,7 +46,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
