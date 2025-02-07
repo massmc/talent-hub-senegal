@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,9 +40,20 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section with Background Image */}
       <section className="relative min-h-screen pt-32 pb-20 flex items-center">
-        <div className="container mx-auto px-4">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-black/70" /> {/* Dark overlay */}
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
