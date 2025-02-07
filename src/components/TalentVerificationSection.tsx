@@ -58,11 +58,7 @@ const TalentVerificationSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <img 
-              src="/lovable-uploads/d662fa98-c165-4189-9fb2-35d13525f7a0.png"
-              alt="Illustration de feuilles avec checklist"
-              className="w-full rounded-lg shadow-xl"
-            />
+            {/* L'image sera ajoutée ici une fois que vous la fournirez */}
           </motion.div>
         </div>
 
