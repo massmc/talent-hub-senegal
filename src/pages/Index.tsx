@@ -167,12 +167,12 @@ const Index = () => {
 };
 
 const backgroundImages = [
-  "/slides/talent-1.jpg",
-  "/slides/talent-2.jpg",
-  "/slides/talent-3.jpg",
-  "/slides/talent-4.jpg",
-  "/slides/talent-5.jpg",
-  "/slides/talent-6.jpg",
+  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2047&auto=format&fit=crop",
 ];
 
 const features = [
