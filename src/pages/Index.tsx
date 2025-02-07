@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -136,9 +135,9 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
-                alt="SenduTalent Illustration"
-                className="w-full max-w-md mx-auto"
+                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
+                alt="Illustration représentant l'Afrique et la technologie"
+                className="w-full max-w-md mx-auto rounded-lg shadow-xl"
               />
             </div>
           </div>
@@ -158,4 +157,3 @@ const menuItems = [
 ];
 
 export default Index;
-
