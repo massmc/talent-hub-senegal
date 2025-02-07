@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -69,7 +70,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative min-h-[25vh] md:min-h-[50vh] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
+      <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center max-w-4xl">
             <div className="flex-1">
