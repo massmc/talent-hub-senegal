@@ -61,7 +61,7 @@ const TalentVerificationSection = () => {
             <img 
               src="/lovable-uploads/d662fa98-c165-4189-9fb2-35d13525f7a0.png"
               alt="Illustration de feuilles avec checklist"
-              className="w-full rounded-lg shadow-xl bg-white p-4"
+              className="w-full rounded-lg shadow-xl"
             />
           </motion.div>
         </div>
