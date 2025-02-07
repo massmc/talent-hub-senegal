@@ -1,12 +1,14 @@
 
 import { motion } from "framer-motion";
-import { Search } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useState } from "react";
 
 const Index = () => {
   const isMobile = useIsMobile();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-sand-900">
@@ -18,7 +20,16 @@ const Index = () => {
               <span className="text-xl md:text-2xl font-bold text-sand-100">SenduTalent</span>
             </div>
             
-            {/* Main Menu - Mobile Dropdown could be added here */}
+            {/* Mobile Menu Button */}
+            <button 
+              className="md:hidden text-sand-300 hover:text-sand-100 transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <Menu size={24} />
+            </button>
+
+            {/* Main Menu - Desktop */}
             <div className="hidden md:flex space-x-8">
               {menuItems.map((item) => (
                 <a
@@ -31,8 +42,25 @@ const Index = () => {
               ))}
             </div>
 
+            {/* Mobile Menu - Dropdown */}
+            {isMobileMenuOpen && (
+              <div className="absolute top-full left-0 right-0 bg-black/95 py-4 md:hidden">
+                <div className="container mx-auto px-4 space-y-4">
+                  {menuItems.map((item) => (
+                    <a
+                      key={item}
+                      href="#"
+                      className="block text-sand-300 hover:text-sand-100 transition-colors py-2"
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Auth Buttons */}
-            <div className="flex items-center space-x-2 md:space-x-4">
+            <div className="hidden md:flex items-center space-x-2 md:space-x-4">
               <Button 
                 variant="outline" 
                 className="bg-black text-white border-2 border-white hover:bg-black/80 text-sm md:text-base px-2 md:px-4"
