@@ -76,7 +76,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section with Background Image and African Pattern Overlay */}
-      <section className="relative min-h-[calc(100vh-4rem)] md:min-h-screen pt-24 md:pt-32 pb-16 md:pb-20 flex items-center">
+      <section className="relative min-h-[25vh] md:min-h-[50vh] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center">
         <div 
           className="absolute inset-0 z-0"
           style={{
@@ -101,7 +101,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-sand-100 mb-4 md:mb-6 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 mb-3 md:mb-4 leading-tight"
             >
               Trouvez rapidement les talents offshore pour{" "}
               <span className="text-sand-300">booster vos projets</span>
@@ -111,7 +111,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg md:text-xl text-sand-200 mb-6 md:mb-8"
+              className="text-base md:text-lg text-sand-200 mb-4 md:mb-6"
             >
               Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
             </motion.p>
