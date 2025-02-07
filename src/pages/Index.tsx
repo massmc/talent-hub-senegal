@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,7 +11,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-sand-900">
-      {/* Top Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-sand-700/30">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -20,7 +18,6 @@ const Index = () => {
               <span className="text-xl md:text-2xl font-bold text-sand-100">SenduTalent</span>
             </div>
             
-            {/* Mobile Menu Button */}
             <button 
               className="md:hidden text-sand-300 hover:text-sand-100 transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -29,7 +26,6 @@ const Index = () => {
               <Menu size={24} />
             </button>
 
-            {/* Main Menu - Desktop */}
             <div className="hidden md:flex space-x-8">
               {menuItems.map((item) => (
                 <a
@@ -42,7 +38,6 @@ const Index = () => {
               ))}
             </div>
 
-            {/* Mobile Menu - Dropdown */}
             {isMobileMenuOpen && (
               <div className="absolute top-full left-0 right-0 bg-black/95 py-4 md:hidden">
                 <div className="container mx-auto px-4 space-y-4">
@@ -59,7 +54,6 @@ const Index = () => {
               </div>
             )}
 
-            {/* Auth Buttons */}
             <div className="hidden md:flex items-center space-x-2 md:space-x-4">
               <Button 
                 variant="outline" 
@@ -75,7 +69,6 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section with Background Image and African Pattern Overlay */}
       <section className="relative min-h-[25vh] md:min-h-[50vh] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center">
         <div 
           className="absolute inset-0 z-0"
@@ -85,7 +78,6 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         >
-          {/* African pattern overlay */}
           <div className="absolute inset-0 bg-sand-900/90 mix-blend-multiply" />
           <div 
             className="absolute inset-0 opacity-10" 
@@ -116,7 +108,6 @@ const Index = () => {
               Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
             </motion.p>
 
-            {/* Search Bar */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -139,20 +130,19 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why SenduTalent Section */}
       <section className="py-12 md:py-20 bg-sand-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-sand-900">Pourquoi SenduTalent?</h2>
               <div className="space-y-4 md:space-y-6">
-                <p className="text-sand-800 text-sm md:text-base">
+                <p className="text-black text-sm md:text-base">
                   SenduTalent est une <span className="font-semibold">plateforme en ligne</span> qui permet aux{" "}
                   <span className="font-semibold">entreprises</span> de{" "}
                   <span className="font-semibold">trouver et de travailler</span> avec des 
                   freelancers et des consultants du digital basés au Sénégal.
                 </p>
-                <p className="text-sand-800 text-sm md:text-base">
+                <p className="text-black text-sm md:text-base">
                   En utilisant SenduTalent, vous pouvez accéder à un large éventail de talents tech 
                   offshore au Sénégal et trouver les professionnels qui répondent le mieux à vos besoins 
                   pour votre projet. La plateforme permet également de gérer les projets et les 
