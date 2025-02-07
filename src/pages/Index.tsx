@@ -167,10 +167,12 @@ const Index = () => {
 };
 
 const backgroundImages = [
-  "/slides/senegal-business.jpg",
-  "/slides/dakar-skyline.jpg",
-  "/slides/tech-team.jpg",
-  "/slides/office-workers.jpg",
+  "/slides/talent-1.jpg",
+  "/slides/talent-2.jpg",
+  "/slides/talent-3.jpg",
+  "/slides/talent-4.jpg",
+  "/slides/talent-5.jpg",
+  "/slides/talent-6.jpg",
 ];
 
 const features = [
