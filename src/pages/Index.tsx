@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -135,8 +136,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d"
-                alt="Illustration représentant l'Afrique et la technologie"
+                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
+                alt="Professional consultant working on a digital project"
                 className="w-full max-w-md mx-auto rounded-lg shadow-xl"
               />
             </div>
