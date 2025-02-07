@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -203,14 +204,25 @@ const menuItems = [
 
 const domains = [
   {
-    title: "Développement Web & Mobile",
+    title: "Projet & Coaching",
     items: [
-      "Applications Web",
-      "Applications Mobiles",
-      "Sites E-commerce",
-      "Progressive Web Apps",
-      "API & Microservices",
-      "Maintenance & Support"
+      "Chef de projet",
+      "Scrum master",
+      "Product Owner",
+      "AMOA/AMOE",
+      "Consulting"
+    ]
+  },
+  {
+    title: "Tech & Digital",
+    items: [
+      "Développeur Front-End",
+      "Développeur back-End",
+      "Développeur Fullstack",
+      "Développeur Mobile",
+      "Tech Lead",
+      "DevOps",
+      "Quality Assurance"
     ]
   },
   {
@@ -223,18 +235,8 @@ const domains = [
       "Prototypage",
       "Design System"
     ]
-  },
-  {
-    title: "Marketing Digital",
-    items: [
-      "SEO & SEM",
-      "Content Marketing",
-      "Social Media",
-      "Analytics & Data",
-      "Email Marketing",
-      "Growth Hacking"
-    ]
   }
 ];
 
 export default Index;
+
