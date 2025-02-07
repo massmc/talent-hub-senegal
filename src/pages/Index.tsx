@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -115,6 +116,38 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 bg-black border-t border-sand-800">
+        <div className="container mx-auto px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-2xl md:text-3xl font-bold text-sand-100 text-center mb-12"
+          >
+            Nos domaines d'expertise
+          </motion.h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            {domains.map((domain, index) => (
+              <motion.div
+                key={domain.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="space-y-4"
+              >
+                <h3 className="text-xl font-semibold text-sand-100">{domain.title}</h3>
+                <ul className="space-y-2">
+                  {domain.items.map((item) => (
+                    <li key={item} className="text-sand-300">{item}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 md:py-20 bg-sand-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -161,6 +194,42 @@ const menuItems = [
   "Freelances",
   "Marketplace",
   "Blog"
+];
+
+const domains = [
+  {
+    title: "Développement Web & Mobile",
+    items: [
+      "Applications Web",
+      "Applications Mobiles",
+      "Sites E-commerce",
+      "Progressive Web Apps",
+      "API & Microservices",
+      "Maintenance & Support"
+    ]
+  },
+  {
+    title: "Design & Création",
+    items: [
+      "UI/UX Design",
+      "Design Graphique",
+      "Motion Design",
+      "Branding & Identité",
+      "Prototypage",
+      "Design System"
+    ]
+  },
+  {
+    title: "Marketing Digital",
+    items: [
+      "SEO & SEM",
+      "Content Marketing",
+      "Social Media",
+      "Analytics & Data",
+      "Email Marketing",
+      "Growth Hacking"
+    ]
+  }
 ];
 
 export default Index;
