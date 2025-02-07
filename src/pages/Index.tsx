@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -143,7 +142,7 @@ const Index = () => {
             </div>
             <div className="relative mt-8 md:mt-0">
               <img 
-                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
+                src="/lovable-uploads/f00f6ae6-0200-427b-8894-f209e1577418.png"
                 alt="Professional consultant working on a digital project"
                 className="w-full max-w-md mx-auto rounded-lg shadow-xl"
               />
