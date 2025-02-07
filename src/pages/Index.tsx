@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -256,7 +255,7 @@ const Index = () => {
               className="relative"
             >
               <img 
-                src="/lovable-uploads/photo-1518495973542-4542c06a5843"
+                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
                 alt="Illustration de feuilles avec checklist"
                 className="w-full rounded-lg shadow-xl"
               />
