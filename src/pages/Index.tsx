@@ -69,62 +69,60 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative min-h-[25vh] md:min-h-[50vh] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="absolute inset-0 bg-sand-900/90 mix-blend-multiply" />
-          <div 
-            className="absolute inset-0 opacity-10" 
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C17817' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            }}
-          />
-        </div>
-
+      <section className="relative min-h-[25vh] md:min-h-[50vh] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl">
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 mb-3 md:mb-4 leading-tight"
-            >
-              Trouvez rapidement les talents offshore pour{" "}
-              <span className="text-sand-300">booster vos projets</span>
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-base md:text-lg text-sand-200 mb-4 md:mb-6"
-            >
-              Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
-            </motion.p>
+          <div className="flex items-center max-w-4xl">
+            <div className="flex-1">
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 mb-3 md:mb-4 leading-tight"
+              >
+                Trouvez rapidement les talents offshore pour{" "}
+                <span className="text-sand-300">booster vos projets</span>
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-base md:text-lg text-sand-200 mb-4 md:mb-6"
+              >
+                Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
+              </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 max-w-2xl"
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="flex flex-col sm:flex-row gap-4 max-w-2xl"
+              >
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-sand-400 h-5 w-5" />
+                  <Input 
+                    type="text"
+                    placeholder="Essayez 'Java', 'React', 'Python'..."
+                    className="pl-10 py-3 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
+                  />
+                </div>
+                <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3 w-full sm:w-auto">
+                  Rechercher
+                </Button>
+              </motion.div>
+            </div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="hidden md:block w-48 ml-8"
             >
-              <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-sand-400 h-5 w-5" />
-                <Input 
-                  type="text"
-                  placeholder="Essayez 'Java', 'React', 'Python'..."
-                  className="pl-10 py-3 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
-                />
-              </div>
-              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3 w-full sm:w-auto">
-                Rechercher
-              </Button>
+              <img 
+                src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
+                alt="Target arrow animation"
+                className="w-full"
+              />
             </motion.div>
           </div>
         </div>
