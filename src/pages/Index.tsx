@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-sand-900">
       {/* Top Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-sand-900/80 backdrop-blur-sm border-b border-sand-700/30">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-sand-700/30">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
