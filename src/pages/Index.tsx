@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,13 +6,13 @@ import { Input } from "@/components/ui/input";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-sand-900">
       {/* Top Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-sand-900/80 backdrop-blur-sm border-b border-sand-700/30">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-white">SenduTalent</span>
+              <span className="text-2xl font-bold text-sand-100">SenduTalent</span>
             </div>
             
             {/* Main Menu */}
@@ -20,7 +21,7 @@ const Index = () => {
                 <a
                   key={item}
                   href="#"
-                  className="text-gray-300 hover:text-emerald-400 transition-colors"
+                  className="text-sand-300 hover:text-sand-100 transition-colors"
                 >
                   {item}
                 </a>
@@ -31,11 +32,11 @@ const Index = () => {
             <div className="flex items-center space-x-4">
               <Button 
                 variant="outline" 
-                className="text-white border-emerald-400 hover:bg-emerald-400 hover:text-black"
+                className="text-sand-100 border-sand-400 hover:bg-sand-400 hover:text-sand-900"
               >
                 Créer un compte
               </Button>
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white">
+              <Button className="bg-sand-500 hover:bg-sand-600 text-white">
                 Se connecter
               </Button>
             </div>
@@ -43,7 +44,7 @@ const Index = () => {
         </div>
       </nav>
 
-      {/* Hero Section with Background Image */}
+      {/* Hero Section with Background Image and African Pattern Overlay */}
       <section className="relative min-h-screen pt-32 pb-20 flex items-center">
         <div 
           className="absolute inset-0 z-0"
@@ -53,7 +54,14 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-black/70" /> {/* Dark overlay */}
+          {/* African pattern overlay */}
+          <div className="absolute inset-0 bg-sand-900/90 mix-blend-multiply" />
+          <div 
+            className="absolute inset-0 opacity-10" 
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C17817' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }}
+          />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -62,17 +70,17 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-5xl md:text-6xl font-bold text-sand-100 mb-6 leading-tight"
             >
               Trouvez rapidement les talents offshore pour{" "}
-              <span className="text-emerald-400">booster vos projets</span>
+              <span className="text-sand-300">booster vos projets</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-gray-300 mb-8"
+              className="text-xl text-sand-200 mb-8"
             >
               Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
             </motion.p>
@@ -85,14 +93,14 @@ const Index = () => {
               className="flex gap-4 max-w-2xl"
             >
               <div className="relative flex-1">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-sand-400 h-5 w-5" />
                 <Input 
                   type="text"
                   placeholder="Essayez 'Java', 'React', 'Python'..."
-                  className="pl-10 py-6 bg-white/10 border-white/20 text-white placeholder:text-gray-400 w-full"
+                  className="pl-10 py-6 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
                 />
               </div>
-              <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8">
+              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8">
                 Rechercher
               </Button>
             </motion.div>
@@ -101,26 +109,26 @@ const Index = () => {
       </section>
 
       {/* Why SenduTalent Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-sand-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Pourquoi SenduTalent?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-sand-900">Pourquoi SenduTalent?</h2>
               <div className="space-y-6">
-                <p className="text-gray-600">
+                <p className="text-sand-800">
                   SenduTalent est une <span className="font-semibold">plateforme en ligne</span> qui permet aux{" "}
                   <span className="font-semibold">entreprises</span> de{" "}
                   <span className="font-semibold">trouver et de travailler</span> avec des 
                   freelancers et des consultants du digital basés au Sénégal.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-sand-800">
                   En utilisant SenduTalent, vous pouvez accéder à un large éventail de talents tech 
                   offshore au Sénégal et trouver les professionnels qui répondent le mieux à vos besoins 
                   pour votre projet. La plateforme permet également de gérer les projets et les 
                   communications avec les freelancers et consultants de manière efficace.
                 </p>
                 <div className="pt-4">
-                  <Button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8">
+                  <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8">
                     Découvrir les talents
                   </Button>
                 </div>
