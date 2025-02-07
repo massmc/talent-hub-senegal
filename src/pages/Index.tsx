@@ -11,9 +11,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
+      <section className="relative h-screen">
         {/* Background Carousel */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0">
           <Carousel
             opts={{
               loop: true,
@@ -27,12 +27,11 @@ const Index = () => {
           >
             <CarouselContent className="h-full">
               {backgroundImages.map((image, index) => (
-                <CarouselItem key={index} className="h-full">
-                  <div
-                    className="w-full h-full bg-cover bg-center bg-no-repeat"
-                    style={{
-                      backgroundImage: `url(${image})`,
-                    }}
+                <CarouselItem key={index} className="relative w-full h-full">
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="absolute w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-black/50" />
                 </CarouselItem>
@@ -42,33 +41,35 @@ const Index = () => {
         </div>
 
         {/* Content */}
-        <div className="container relative z-10 px-4 mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <span className="inline-block px-4 py-2 bg-sand-100 text-sand-500 rounded-full text-sm font-medium mb-6 animate-fade-up">
-              Bienvenue sur SenduTalent
-            </span>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up">
-              Découvrez les Meilleurs Talents du Sénégal
-            </h1>
-            <p className="text-xl text-gray-200 mb-8 animate-fade-up">
-              La première plateforme de mise en relation entre talents sénégalais et opportunités professionnelles
-            </p>
+        <div className="relative h-full flex items-center justify-center">
+          <div className="container px-4 mx-auto z-10">
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center max-w-4xl mx-auto"
             >
-              <button className="inline-flex items-center px-8 py-4 bg-emerald-300 text-white rounded-lg hover:bg-emerald-400 transition-colors duration-200 font-medium text-lg group">
-                Commencer maintenant
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <span className="inline-block px-4 py-2 bg-sand-100 text-sand-500 rounded-full text-sm font-medium mb-6 animate-fade-up">
+                Bienvenue sur SenduTalent
+              </span>
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up">
+                Découvrez les Meilleurs Talents du Sénégal
+              </h1>
+              <p className="text-xl text-gray-200 mb-8 animate-fade-up">
+                La première plateforme de mise en relation entre talents sénégalais et opportunités professionnelles
+              </p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <button className="inline-flex items-center px-8 py-4 bg-emerald-300 text-white rounded-lg hover:bg-emerald-400 transition-colors duration-200 font-medium text-lg group">
+                  Commencer maintenant
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </motion.div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
