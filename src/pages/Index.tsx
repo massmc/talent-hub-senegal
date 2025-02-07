@@ -11,9 +11,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center">
         {/* Background Carousel */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 z-0">
           <Carousel
             opts={{
               loop: true,
@@ -25,24 +25,24 @@ const Index = () => {
             ]}
             className="w-full h-full"
           >
-            <CarouselContent>
+            <CarouselContent className="h-full">
               {backgroundImages.map((image, index) => (
-                <CarouselItem key={index} className="w-full h-full">
+                <CarouselItem key={index} className="h-full">
                   <div
-                    className="w-full h-full bg-cover bg-center"
+                    className="w-full h-full bg-cover bg-center bg-no-repeat"
                     style={{
                       backgroundImage: `url(${image})`,
                     }}
-                  >
-                    <div className="absolute inset-0 bg-black/50" />
-                  </div>
+                  />
+                  <div className="absolute inset-0 bg-black/50" />
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
         </div>
 
-        <div className="container px-4 mx-auto relative z-10">
+        {/* Content */}
+        <div className="container relative z-10 px-4 mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
