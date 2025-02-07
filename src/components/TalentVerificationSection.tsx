@@ -58,7 +58,11 @@ const TalentVerificationSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            {/* L'image sera ajoutée ici une fois que vous la fournirez */}
+            <img 
+              src="/lovable-uploads/bce8db6b-a464-4f38-b94a-86d3c7ee062c.png"
+              alt="Liste de vérification avec stylo"
+              className="w-full h-auto object-contain"
+            />
           </motion.div>
         </div>
 
