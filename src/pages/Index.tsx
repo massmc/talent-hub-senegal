@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap } from "lucide-react";
+import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -242,25 +243,66 @@ const domains = [
   },
   {
     title: "Tech & Digital",
+    icon: <Code className="w-8 h-8 text-sand-300 mb-4" />,
     items: [
-      "Développeur Front-End",
-      "Développeur back-End",
-      "Développeur Fullstack",
-      "Développeur Mobile",
-      "Tech Lead",
-      "DevOps",
-      "Quality Assurance"
+      {
+        text: "Développeur Front-End",
+        icon: <Terminal className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Développeur back-End",
+        icon: <Database className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Développeur Fullstack",
+        icon: <Code className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Développeur Mobile",
+        icon: <Smartphone className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Tech Lead",
+        icon: <Network className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "DevOps",
+        icon: <Shield className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Quality Assurance",
+        icon: <Target className="w-4 h-4 text-sand-500 inline mr-2" />
+      }
     ]
   },
   {
     title: "Design & Création",
+    icon: <Palette className="w-8 h-8 text-sand-300 mb-4" />,
     items: [
-      "UI/UX Design",
-      "Design Graphique",
-      "Motion Design",
-      "Branding & Identité",
-      "Prototypage",
-      "Design System"
+      {
+        text: "UI/UX Design",
+        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Design Graphique",
+        icon: <Paintbrush className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Motion Design",
+        icon: <Image className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Branding & Identité",
+        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Prototypage",
+        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Design System",
+        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
+      }
     ]
   }
 ];
