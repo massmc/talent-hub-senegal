@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { Search, Menu } from "lucide-react";
+import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -175,12 +174,24 @@ const Index = () => {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-sand-700/30 hover:border-sand-500/50 transition-colors"
               >
-                <h3 className="text-xl font-semibold text-sand-100 mb-6">{domain.title}</h3>
+                <div className="text-center">
+                  {domain.icon}
+                  <h3 className="text-xl font-semibold text-sand-100 mb-6">{domain.title}</h3>
+                </div>
                 <ul className="space-y-3">
-                  {domain.items.map((item) => (
-                    <li key={item} className="text-sand-300 flex items-center">
-                      <div className="w-2 h-2 rounded-full bg-sand-500 mr-3"></div>
-                      {item}
+                  {domain.items.map((item, itemIndex) => (
+                    <li key={typeof item === 'string' ? item : item.text} className="text-sand-300 flex items-center">
+                      {typeof item === 'string' ? (
+                        <>
+                          <div className="w-2 h-2 rounded-full bg-sand-500 mr-3"></div>
+                          {item}
+                        </>
+                      ) : (
+                        <>
+                          {item.icon}
+                          {item.text}
+                        </>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -205,12 +216,28 @@ const menuItems = [
 const domains = [
   {
     title: "Projet & Coaching",
+    icon: <Briefcase className="w-8 h-8 text-sand-300 mb-4" />,
     items: [
-      "Chef de projet",
-      "Scrum master",
-      "Product Owner",
-      "AMOA/AMOE",
-      "Consulting"
+      {
+        text: "Chef de projet",
+        icon: <Target className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Scrum master",
+        icon: <UserCheck className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Product Owner",
+        icon: <FileStack className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "AMOA/AMOE",
+        icon: <Target className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Consulting",
+        icon: <GraduationCap className="w-4 h-4 text-sand-500 inline mr-2" />
+      }
     ]
   },
   {
@@ -239,4 +266,3 @@ const domains = [
 ];
 
 export default Index;
-
