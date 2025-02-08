@@ -121,7 +121,7 @@ const TalentSearchSection = () => {
               className="order-1 md:order-2 relative flex justify-center items-center"
             >
               <img 
-                src="/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png"
+                src="/lovable-uploads/b2ac4bb8-3988-4e2e-9caa-c7bf13c65010.png"
                 alt="Illustration de tarification"
                 className="w-3/4 md:w-2/3 h-auto object-contain"
               />
