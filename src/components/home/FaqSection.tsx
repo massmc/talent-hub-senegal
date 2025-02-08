@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -15,36 +14,6 @@ const FaqSection = () => {
         <div className="absolute -right-24 top-0 w-96 h-96 bg-ochre-400/30 rounded-full blur-3xl" />
         <div className="absolute left-12 top-24 w-72 h-72 bg-terracotta-400/30 rounded-full blur-3xl" />
         <div className="absolute right-24 bottom-12 w-80 h-80 bg-sand-400/30 rounded-full blur-3xl" />
-        
-        {/* African tribal patterns */}
-        <div 
-          className="absolute left-0 bottom-0 w-full h-full opacity-10"
-          style={{
-            backgroundImage: `url('/lovable-uploads/tribal-pattern.png')`,
-            backgroundSize: '300px',
-            backgroundRepeat: 'repeat',
-          }}
-        />
-        
-        {/* Additional decorative elements */}
-        <div 
-          className="absolute right-0 top-0 w-48 h-48 opacity-30 transform rotate-45"
-          style={{
-            backgroundImage: `url('/lovable-uploads/0f0462ae-75cb-4e4a-9c7d-f553a02b891c.png')`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div 
-          className="absolute left-0 bottom-0 w-64 h-64 opacity-30 transform -rotate-45"
-          style={{
-            backgroundImage: `url('/lovable-uploads/0f0462ae-75cb-4e4a-9c7d-f553a02b891c.png')`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-          }}
-        />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
