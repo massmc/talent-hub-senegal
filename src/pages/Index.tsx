@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -245,10 +246,23 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative order-2 md:order-2"
+            >
+              <img 
+                src="/lovable-uploads/0780ef47-9b37-4625-add8-77cf53c70476.png"
+                alt="Illustration de feuilles avec checklist"
+                className="w-full object-contain mix-blend-darken"
+              />
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6"
+              className="space-y-6 order-1 md:order-1"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-sand-100 rounded-lg">
@@ -274,19 +288,6 @@ const Index = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <img 
-                src="/lovable-uploads/0780ef47-9b37-4625-add8-77cf53c70476.png"
-                alt="Illustration de feuilles avec checklist"
-                className="w-full object-contain mix-blend-darken"
-              />
             </motion.div>
           </div>
 
