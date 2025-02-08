@@ -1,4 +1,5 @@
 import MainNavbar from "@/components/navigation/MainNavbar";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -485,6 +486,9 @@ const FreelancesPage = () => {
           </Button>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
