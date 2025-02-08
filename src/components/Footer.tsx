@@ -15,19 +15,28 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-sand-100 font-semibold text-lg mb-4">Services</h3>
+            <h3 className="text-sand-100 font-semibold text-lg mb-4">Expertises</h3>
             <ul className="space-y-2 text-sm">
+              <li>
+                <a href="#" className="hover:text-sand-100 transition-colors">Projet & Coaching</a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-sand-100 transition-colors">Tech & Digital</a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-sand-100 transition-colors">Design & Création</a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-sand-100 transition-colors">Consulting</a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-sand-100 transition-colors">Chef de projet</a>
+              </li>
               <li>
                 <a href="#" className="hover:text-sand-100 transition-colors">Développement Web</a>
               </li>
               <li>
-                <a href="#" className="hover:text-sand-100 transition-colors">Design UI/UX</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-sand-100 transition-colors">Marketing Digital</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-sand-100 transition-colors">Gestion de Projet</a>
+                <a href="#" className="hover:text-sand-100 transition-colors">UI/UX Design</a>
               </li>
             </ul>
           </div>
