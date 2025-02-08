@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
   { label: "À propos de nous", path: "/a-propos" },
@@ -16,6 +16,7 @@ const menuItems = [
 const MainNavbar = () => {
   const isMobile = useIsMobile();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-sand-700/30">
@@ -40,7 +41,9 @@ const MainNavbar = () => {
               <Link
                 key={item.label}
                 to={item.path}
-                className="text-sand-300 hover:text-sand-100 transition-colors"
+                className={`text-sand-300 hover:text-sand-100 transition-colors ${
+                  location.pathname === item.path ? "text-sand-100" : ""
+                }`}
               >
                 {item.label}
               </Link>
@@ -54,7 +57,10 @@ const MainNavbar = () => {
                   <Link
                     key={item.label}
                     to={item.path}
-                    className="block text-sand-300 hover:text-sand-100 transition-colors py-2"
+                    className={`block text-sand-300 hover:text-sand-100 transition-colors py-2 ${
+                      location.pathname === item.path ? "text-sand-100" : ""
+                    }`}
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
                   </Link>
@@ -81,3 +87,4 @@ const MainNavbar = () => {
 };
 
 export default MainNavbar;
+
