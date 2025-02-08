@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -508,8 +507,8 @@ const Index = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
-                  src="/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png"
-                  alt="Tarification"
+                  src="/lovable-uploads/cb1bdfce-75b6-47c1-8fd3-6900e3382e12.png"
+                  alt="Illustration des coûts et tarification"
                   className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
@@ -655,4 +654,3 @@ const domains = [
 ];
 
 export default Index;
-
