@@ -1,4 +1,3 @@
-
 import { Search, MapPin, Star, Languages, Euro, Filter } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -142,9 +141,8 @@ const SearchSection = () => {
                     min={0}
                     step={50}
                     onValueChange={(value) => setPriceRange([value[0], value[1]])}
-                    className="bg-white"
                   />
-                  <div className="flex justify-between mt-2 text-sm text-sand-600">
+                  <div className="flex justify-between mt-2 text-sm text-sand-600 font-medium">
                     <span>{priceRange[0]}€</span>
                     <span>{priceRange[1]}€</span>
                   </div>
@@ -177,4 +175,3 @@ const SearchSection = () => {
 };
 
 export default SearchSection;
-
