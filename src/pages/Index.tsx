@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -450,8 +449,8 @@ const Index = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
-                  src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
-                  alt="Trouver un talent sur Sendu Talent"
+                  src="/lovable-uploads/dc4dfc1b-ab05-4198-a47c-35e896b99361.png"
+                  alt="Illustration de recherche de talents"
                   className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
