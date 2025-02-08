@@ -111,7 +111,7 @@ const ExpertiseSection = () => {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {domains.map((domain, index) => (
             <motion.div
               key={domain.title}
@@ -144,24 +144,7 @@ const ExpertiseSection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full max-w-4xl mx-auto mb-16"
-        >
-          <img 
-            src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
-            alt="Motif géométrique décoratif"
-            className="w-full h-[60px] object-contain opacity-70"
-          />
-        </motion.div>
       </div>
-      <div 
-        className="absolute bottom-0 left-0 right-0 w-full h-24 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-30"
-        style={{ backgroundSize: '400px auto' }}
-      ></div>
     </section>
   );
 };
