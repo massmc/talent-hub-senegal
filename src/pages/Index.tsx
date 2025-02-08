@@ -355,7 +355,7 @@ const Index = () => {
                   >
                     <FileStack className="w-6 h-6 text-sand-500 mb-2" />
                     <h5 className="font-semibold text-sand-900 mb-2">3. Je contractualise</h5>
-                    <p className="text-sand-700">Et je suis l'avancement de mon projet à l'aide des outils de suivi de la plateforme WIM.</p>
+                    <p className="text-sand-700">Et je suis l'avancement de mon projet à l'aide des outils de suivi de la plateforme SenduTalent CRM.</p>
                   </motion.div>
                 </div>
               </motion.div>
