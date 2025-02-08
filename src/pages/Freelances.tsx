@@ -46,12 +46,16 @@ const FreelancesPage = () => {
       <section className="relative pt-32 pb-16 px-4">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0"
+          className="absolute inset-0 bg-cover bg-center z-0 bg-no-repeat"
           style={{ 
-            backgroundImage: "url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')",
+            backgroundImage: `url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')`,
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-sand-500/95 to-terracotta-500/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-sand-500/80 to-terracotta-500/80" />
         </div>
 
         {/* Content */}
