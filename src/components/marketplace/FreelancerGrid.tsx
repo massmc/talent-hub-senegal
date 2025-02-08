@@ -36,7 +36,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "1",
     name: "Amadou Diallo",
-    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+    avatar: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6",
     specialization: "Développeur Frontend React",
     experience: {
       years: 5,
@@ -68,7 +68,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "3",
     name: "Moussa Ndiaye",
-    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
+    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
     specialization: "DevOps Engineer",
     experience: {
       years: 6,
@@ -84,7 +84,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "4",
     name: "Aïcha Ba",
-    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+    avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb",
     specialization: "Data Scientist",
     experience: {
       years: 4,
@@ -100,7 +100,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "5",
     name: "Omar Sy",
-    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     specialization: "Développeur Backend Node.js",
     experience: {
       years: 7,
@@ -116,7 +116,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "6",
     name: "Mariama Touré",
-    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
     specialization: "Product Manager",
     experience: {
       years: 5,
@@ -132,7 +132,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "7",
     name: "Ibrahima Fall",
-    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
     specialization: "Cloud Architect",
     experience: {
       years: 8,
@@ -148,7 +148,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "8",
     name: "Aminata Diop",
-    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     specialization: "Scrum Master",
     experience: {
       years: 4,
@@ -164,7 +164,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "9",
     name: "Modou Faye",
-    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
+    avatar: "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
     specialization: "Security Expert",
     experience: {
       years: 6,
@@ -180,7 +180,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "10",
     name: "Rama Seck",
-    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+    avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb",
     specialization: "QA Engineer",
     experience: {
       years: 3,
@@ -196,7 +196,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "11",
     name: "Cheikh Ndoye",
-    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     specialization: "Développeur Mobile",
     experience: {
       years: 4,
@@ -212,7 +212,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "12",
     name: "Adama Sarr",
-    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
     specialization: "AI Engineer",
     experience: {
       years: 5,
@@ -228,7 +228,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "13",
     name: "Sokhna Gueye",
-    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
     specialization: "Frontend Developer",
     experience: {
       years: 3,
@@ -244,7 +244,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "14",
     name: "Ousmane Kane",
-    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
+    avatar: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6",
     specialization: "Fullstack Developer",
     experience: {
       years: 7,
@@ -260,7 +260,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "15",
     name: "Khady Diouf",
-    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+    avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb",
     specialization: "DevOps Engineer",
     experience: {
       years: 5,
@@ -276,7 +276,7 @@ const mockFreelancers: Freelancer[] = [
   {
     id: "16",
     name: "Babacar Mbaye",
-    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     specialization: "Systems Architect",
     experience: {
       years: 7,
