@@ -3,52 +3,84 @@ import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Users, Globe, MapPin } from "lucide-react";
-
-const agencies = [
-  {
-    name: "Tech Solutions Dakar",
-    description: "Agence spécialisée dans le développement web et mobile, avec une expertise particulière dans les solutions e-commerce et les applications métier.",
-    size: "15-30 employés",
-    location: "Dakar, Sénégal",
-    expertise: ["Développement Web", "Applications Mobiles", "E-commerce", "UI/UX Design"],
-  },
-  {
-    name: "Digital Senegal",
-    description: "Expert en transformation digitale et solutions cloud pour les entreprises sénégalaises. Nous accompagnons votre croissance numérique.",
-    size: "30-50 employés",
-    location: "Dakar, Sénégal",
-    expertise: ["Cloud Computing", "Transformation Digitale", "Big Data", "IA"],
-  },
-  {
-    name: "Creative Hub Africa",
-    description: "Studio créatif spécialisé dans le design, le branding et le marketing digital. Nous donnons vie à vos projets avec une touche africaine unique.",
-    size: "10-20 employés",
-    location: "Saint-Louis, Sénégal",
-    expertise: ["Design Graphique", "Marketing Digital", "Branding", "Social Media"],
-  },
-];
+import { Building2, Users, BarChart, FileCheck, Rocket, Target, CheckCircle2, PanelTopOpen, UserCheck, Briefcase } from "lucide-react";
 
 const features = [
   {
     icon: <Building2 className="w-12 h-12 text-sand-500" />,
-    title: "Expertise Locale",
-    description: "Des agences sénégalaises comprenant parfaitement les enjeux et la culture locale.",
+    title: "Accédez à de nouvelles opportunités",
+    description: "Accédez à un large réseau d'entreprises : PME, ETI, start-ups et grands comptes, sans besoin de prospection.",
   },
   {
-    icon: <Users className="w-12 h-12 text-sand-500" />,
-    title: "Équipes Qualifiées",
-    description: "Des talents formés aux dernières technologies et méthodologies de travail.",
+    icon: <BarChart className="w-12 h-12 text-sand-500" />,
+    title: "Optimisez vos intercontrats",
+    description: "Proposez à vos consultants en intercontrat des missions adaptées à leurs compétences et aspirations.",
   },
   {
-    icon: <Globe className="w-12 h-12 text-sand-500" />,
-    title: "Vision Internationale",
-    description: "Une approche globale avec des standards internationaux.",
+    icon: <Target className="w-12 h-12 text-sand-500" />,
+    title: "Missions de qualité",
+    description: "Des missions en parfaite adéquation avec le profil de vos collaborateurs et leurs compétences.",
   },
   {
-    icon: <MapPin className="w-12 h-12 text-sand-500" />,
-    title: "Proximité",
-    description: "Un accompagnement de proximité pour vos projets digitaux.",
+    icon: <PanelTopOpen className="w-12 h-12 text-sand-500" />,
+    title: "Gestion centralisée",
+    description: "Pilotez vos équipes avec des outils modernes : dashboard, signature électronique, et plus encore !",
+  },
+];
+
+const workflowSteps = [
+  {
+    icon: <Building2 className="w-8 h-8 text-sand-500" />,
+    title: "Référencement de votre agence / ESN",
+    description: "Intégration à notre plateforme et proposition de missions adaptées à vos consultants.",
+  },
+  {
+    icon: <UserCheck className="w-8 h-8 text-sand-500" />,
+    title: "Qualification de vos consultants",
+    description: "Évaluation des compétences techniques et des aspirations professionnelles.",
+  },
+  {
+    icon: <FileCheck className="w-8 h-8 text-sand-500" />,
+    title: "Tests techniques",
+    description: "Évaluation technique rigoureuse sur notre plateforme pour tous les consultants IT.",
+  },
+  {
+    icon: <Users className="w-8 h-8 text-sand-500" />,
+    title: "Évaluation du savoir-être",
+    description: "Évaluation des compétences comportementales pour une intégration fluide.",
+  },
+  {
+    icon: <CheckCircle2 className="w-8 h-8 text-sand-500" />,
+    title: "Accompagnement et suivi",
+    description: "Précision des préférences et disponibilités avant la mise en relation client.",
+  },
+  {
+    icon: <Rocket className="w-8 h-8 text-sand-500" />,
+    title: "Sélection et démarrage de mission",
+    description: "Mise en relation et accompagnement tout au long de la mission.",
+  },
+];
+
+const benefits = [
+  {
+    icon: <Rocket className="w-16 h-16 text-sand-500" />,
+    title: "Accélérez votre business",
+    description: "Développez votre activité rapidement grâce à notre réseau.",
+  },
+  {
+    icon: <PanelTopOpen className="w-16 h-16 text-sand-500" />,
+    title: "Gestion simplifiée",
+    description: "Pilotez vos consultants en toute simplicité.",
+  },
+  {
+    icon: <BarChart className="w-16 h-16 text-sand-500" />,
+    title: "Maximisez l'occupation",
+    description: "Optimisez le taux d'occupation de vos talents.",
+  },
+  {
+    icon: <Briefcase className="w-16 h-16 text-sand-500" />,
+    title: "Missions qualifiées",
+    description: "Accédez à des missions de qualité pour vos experts IT.",
   },
 ];
 
@@ -58,16 +90,17 @@ const AgencesPage = () => {
       <MainNavbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4">
+      <section className="relative pt-32 pb-16 px-4 bg-geometric-pattern bg-cover bg-center bg-opacity-10">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-sand-900 mb-6">
-            Les Meilleures Agences Digitales du Sénégal
+            Rejoignez la plus grande communauté Tech en Afrique !
           </h1>
           <p className="text-xl text-sand-700 mb-8 max-w-3xl mx-auto">
-            Découvrez notre sélection d'agences digitales de premier plan, offrant des services tech de qualité internationale
+            Sendu Talent vous aide à développer votre business et à gérer vos consultants. 
+            Nous prenons en charge la gestion des plannings, le suivi des missions et tous les aspects administratifs.
           </p>
           <Button className="bg-sand-500 hover:bg-sand-600 text-white">
-            Contactez une agence
+            Rejoindre Sendu Talent
           </Button>
         </div>
       </section>
@@ -76,11 +109,11 @@ const AgencesPage = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-sand-900 text-center mb-12">
-            Pourquoi Choisir nos Agences Partenaires ?
+            Pourquoi collaborer avec Sendu Talent ?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center p-6 african-card">
+              <Card key={index} className="african-card">
                 <CardContent className="pt-6">
                   <div className="flex justify-center mb-4">
                     {feature.icon}
@@ -98,48 +131,65 @@ const AgencesPage = () => {
         </div>
       </section>
 
-      {/* Agencies List Section */}
-      <section className="py-16 px-4">
+      {/* Workflow Section */}
+      <section className="py-16 px-4 bg-sand-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-sand-900 text-center mb-12">
-            Nos Agences Partenaires
+            Comment ça marche ?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {agencies.map((agency, index) => (
+            {workflowSteps.map((step, index) => (
               <Card key={index} className="african-card">
                 <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-sand-100 rounded-full p-3 mr-4">
+                      {step.icon}
+                    </div>
+                    <span className="text-2xl font-bold text-sand-500">{index + 1}</span>
+                  </div>
                   <h3 className="text-xl font-semibold text-sand-800 mb-3">
-                    {agency.name}
+                    {step.title}
                   </h3>
-                  <p className="text-sand-600 mb-4">
-                    {agency.description}
+                  <p className="text-sand-600">
+                    {step.description}
                   </p>
-                  <div className="space-y-2">
-                    <p className="text-sm text-sand-500">
-                      <Users className="inline-block w-4 h-4 mr-2" />
-                      {agency.size}
-                    </p>
-                    <p className="text-sm text-sand-500">
-                      <MapPin className="inline-block w-4 h-4 mr-2" />
-                      {agency.location}
-                    </p>
-                  </div>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {agency.expertise.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="text-xs bg-sand-100 text-sand-700 px-2 py-1 rounded-full"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                  <Button className="w-full mt-6 bg-sand-500 hover:bg-sand-600 text-white">
-                    En savoir plus
-                  </Button>
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-sand-900 mb-4">
+            Pourquoi choisir Sendu Talent ?
+          </h2>
+          <p className="text-xl text-sand-700 mb-12">
+            La plateforme N°1 pour les agences et ESN en Afrique !
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="african-card">
+                <CardContent className="p-6">
+                  <div className="flex justify-center mb-4">
+                    {benefit.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-sand-800 mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-sand-600">
+                    {benefit.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-12">
+            <Button className="bg-sand-500 hover:bg-sand-600 text-white text-lg px-8 py-6">
+              Développez votre activité avec Sendu Talent
+            </Button>
           </div>
         </div>
       </section>
