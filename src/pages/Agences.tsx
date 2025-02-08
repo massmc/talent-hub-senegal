@@ -1,3 +1,4 @@
+
 import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -106,11 +107,11 @@ const faqs = [
 
 const AgencesPage = () => {
   return (
-    <div className="min-h-screen bg-sand-50">
+    <div className="min-h-screen bg-white">
       <MainNavbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4 bg-geometric-pattern bg-cover bg-center bg-opacity-10">
+      <section className="relative pt-32 pb-16 px-4 bg-geometric-pattern bg-cover bg-center">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-sand-900 mb-6">
             Rejoignez la plus grande communauté Tech en Afrique !
@@ -133,7 +134,7 @@ const AgencesPage = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="african-card">
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="pt-6">
                   <div className="flex justify-center mb-4">
                     {feature.icon}
@@ -152,14 +153,14 @@ const AgencesPage = () => {
       </section>
 
       {/* Workflow Section */}
-      <section className="py-16 px-4 bg-sand-50">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-sand-900 text-center mb-12">
             Comment ça marche ?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {workflowSteps.map((step, index) => (
-              <Card key={index} className="african-card">
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <div className="bg-sand-100 rounded-full p-3 mr-4">
@@ -191,7 +192,7 @@ const AgencesPage = () => {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="african-card">
+              <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="flex justify-center mb-4">
                     {benefit.icon}
@@ -215,7 +216,7 @@ const AgencesPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 bg-sand-50">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-sand-900 text-center mb-8">
             FAQ - Sendu Talent pour les Agences & ESN
@@ -226,7 +227,7 @@ const AgencesPage = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-white/90 backdrop-blur-sm rounded-lg border border-sand-200 shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white shadow-sm hover:shadow-md transition-shadow"
               >
                 <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
                   {faq.question}
