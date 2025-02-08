@@ -13,15 +13,15 @@ const MarketplacePage = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
             backgroundImage: "url('/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png')",
-            opacity: 0.3 
+            opacity: 0.2 
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-sand-900/50 to-sand-900/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sand-900/80 to-sand-900" />
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-xl">
             🌍 Découvrez les meilleurs talents IT sur Sendu Talent
           </h1>
-          <p className="text-lg md:text-xl text-sand-50 max-w-3xl drop-shadow-lg font-medium">
+          <p className="text-lg md:text-xl text-white max-w-3xl drop-shadow-xl font-medium">
             🔍 Trouvez le freelance idéal grâce à nos filtres avancés et une présentation claire des profils
           </p>
         </div>
