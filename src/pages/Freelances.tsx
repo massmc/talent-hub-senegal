@@ -64,8 +64,8 @@ const FreelancesPage = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
 
   const slides = [
-    '/lovable-uploads/ffc2776f-3d19-4afc-b2d8-9fe80f29e157.png',
-    '/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png',
+    '/lovable-uploads/9ba9017d-756d-4cda-98bb-e0bbfa7bdc86.png',
+    '/lovable-uploads/b454b838-12ff-4220-9c89-fecc87613dd2.png',
   ];
 
   return (
