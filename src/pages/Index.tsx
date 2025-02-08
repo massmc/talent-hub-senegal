@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -499,6 +500,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
