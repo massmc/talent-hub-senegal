@@ -239,12 +239,12 @@ const SignUp = () => {
               />
               <Button
                 type="submit"
-                className="w-full bg-sand-500 hover:bg-sand-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="w-full bg-sand-500 hover:bg-sand-600 text-white text-lg font-semibold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-sand-400 hover:border-sand-300 backdrop-blur-sm"
                 disabled={isLoading}
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center gap-2">
-                    <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
+                    <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
                     <span>Création en cours...</span>
                   </div>
                 ) : (
@@ -288,12 +288,12 @@ const SignUp = () => {
               />
               <Button
                 type="submit"
-                className="w-full bg-sand-500 hover:bg-sand-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="w-full bg-sand-500 hover:bg-sand-600 text-white text-lg font-semibold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-sand-400 hover:border-sand-300 backdrop-blur-sm"
                 disabled={isLoading}
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center gap-2">
-                    <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
+                    <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
                     <span>Création en cours...</span>
                   </div>
                 ) : (
@@ -324,12 +324,12 @@ const SignUp = () => {
               />
               <Button
                 type="submit"
-                className="w-full bg-sand-500 hover:bg-sand-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="w-full bg-sand-500 hover:bg-sand-600 text-white text-lg font-semibold py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-sand-400 hover:border-sand-300 backdrop-blur-sm"
                 disabled={isLoading}
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center gap-2">
-                    <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
+                    <span className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></span>
                     <span>Création en cours...</span>
                   </div>
                 ) : (
