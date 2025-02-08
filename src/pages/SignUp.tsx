@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -108,9 +109,9 @@ const SignUp = () => {
                       <FormItem>
                         <FormLabel className="text-white">Prénom</FormLabel>
                         <FormControl>
-                          <Input placeholder="John" {...field} />
+                          <Input placeholder="John" {...field} className="text-white" />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-white" />
                       </FormItem>
                     )}
                   />
@@ -121,9 +122,9 @@ const SignUp = () => {
                       <FormItem>
                         <FormLabel className="text-white">Nom</FormLabel>
                         <FormControl>
-                          <Input placeholder="Doe" {...field} />
+                          <Input placeholder="Doe" {...field} className="text-white" />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-white" />
                       </FormItem>
                     )}
                   />
@@ -136,9 +137,9 @@ const SignUp = () => {
                     <FormItem>
                       <FormLabel className="text-white">Email</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="john.doe@example.com" {...field} />
+                        <Input type="email" placeholder="john.doe@example.com" {...field} className="text-white" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-white" />
                     </FormItem>
                   )}
                 />
@@ -151,8 +152,8 @@ const SignUp = () => {
                       <FormLabel className="text-white">Type de profil</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Sélectionnez votre profil" />
+                          <SelectTrigger className="text-white">
+                            <SelectValue placeholder="Sélectionnez votre profil" className="text-white" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
@@ -161,7 +162,7 @@ const SignUp = () => {
                           <SelectItem value="client">Client</SelectItem>
                         </SelectContent>
                       </Select>
-                      <FormMessage />
+                      <FormMessage className="text-white" />
                     </FormItem>
                   )}
                 />
@@ -173,9 +174,9 @@ const SignUp = () => {
                     <FormItem>
                       <FormLabel className="text-white">Mot de passe</FormLabel>
                       <FormControl>
-                        <Input type="password" {...field} />
+                        <Input type="password" {...field} className="text-white" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-white" />
                     </FormItem>
                   )}
                 />
@@ -187,9 +188,9 @@ const SignUp = () => {
                     <FormItem>
                       <FormLabel className="text-white">Confirmer le mot de passe</FormLabel>
                       <FormControl>
-                        <Input type="password" {...field} />
+                        <Input type="password" {...field} className="text-white" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-white" />
                     </FormItem>
                   )}
                 />
