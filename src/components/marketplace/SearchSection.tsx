@@ -62,7 +62,7 @@ const SearchSection = () => {
               Filtres avancés
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-full sm:max-w-lg">
+          <SheetContent side="right" className="w-full sm:max-w-lg bg-white">
             <SheetHeader>
               <SheetTitle>Filtres de recherche</SheetTitle>
             </SheetHeader>
@@ -74,10 +74,10 @@ const SearchSection = () => {
                   value={experienceLevel || ""}
                   onValueChange={(value: any) => setExperienceLevel(value || null)}
                 >
-                  <SelectTrigger>
+                  <SelectTrigger className="bg-white border-sand-200">
                     <SelectValue placeholder="Sélectionnez un niveau" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white border-sand-200 shadow-lg">
                     <SelectItem value="junior">Junior</SelectItem>
                     <SelectItem value="confirmed">Confirmé</SelectItem>
                     <SelectItem value="expert">Expert</SelectItem>
@@ -91,10 +91,10 @@ const SearchSection = () => {
                   value={availability || ""}
                   onValueChange={(value: any) => setAvailability(value || null)}
                 >
-                  <SelectTrigger>
+                  <SelectTrigger className="bg-white border-sand-200">
                     <SelectValue placeholder="Sélectionnez une disponibilité" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white border-sand-200 shadow-lg">
                     <SelectItem value="immediate">Disponible immédiatement</SelectItem>
                     <SelectItem value="one_month">Sous 1 mois</SelectItem>
                     <SelectItem value="watching">En veille</SelectItem>
@@ -108,10 +108,10 @@ const SearchSection = () => {
                   value={workType || ""}
                   onValueChange={(value: any) => setWorkType(value || null)}
                 >
-                  <SelectTrigger>
+                  <SelectTrigger className="bg-white border-sand-200">
                     <SelectValue placeholder="Sélectionnez un type" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white border-sand-200 shadow-lg">
                     <SelectItem value="remote">Télétravail</SelectItem>
                     <SelectItem value="onsite">Présentiel</SelectItem>
                     <SelectItem value="hybrid">Hybride</SelectItem>
@@ -128,7 +128,7 @@ const SearchSection = () => {
                     placeholder="Ville ou pays..."
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
-                    className="pl-10"
+                    className="pl-10 bg-white border-sand-200"
                   />
                 </div>
               </div>
@@ -156,10 +156,10 @@ const SearchSection = () => {
                   value={minRating.toString()}
                   onValueChange={(value) => setMinRating(Number(value))}
                 >
-                  <SelectTrigger>
+                  <SelectTrigger className="bg-white border-sand-200">
                     <SelectValue placeholder="Sélectionnez une note minimale" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white border-sand-200 shadow-lg">
                     <SelectItem value="0">Toutes les notes</SelectItem>
                     <SelectItem value="3">⭐⭐⭐ et plus</SelectItem>
                     <SelectItem value="4">⭐⭐⭐⭐ et plus</SelectItem>
@@ -176,3 +176,4 @@ const SearchSection = () => {
 };
 
 export default SearchSection;
+
