@@ -32,11 +32,18 @@ export const InfoSections = () => {
               className="order-1 md:order-2 relative"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
-              <img 
-                src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
-                alt="Trouver un talent sur Sendu Talent"
-                className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                  alt="Recherche de talents en ligne"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+                  alt="Collaboration d'équipe"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </motion.div>
           </div>
 
