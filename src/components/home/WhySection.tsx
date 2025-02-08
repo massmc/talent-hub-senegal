@@ -10,14 +10,14 @@ const WhySection = () => {
         <img 
           src="/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png"
           alt=""
-          className="h-full w-full object-cover opacity-10"
+          className="h-full w-full object-cover opacity-20"
         />
       </div>
       <div className="absolute inset-y-0 left-0 w-24 md:w-32">
         <img 
           src="/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png"
           alt=""
-          className="h-full w-full object-cover opacity-10 transform scale-x-[-1]"
+          className="h-full w-full object-cover opacity-20 transform scale-x-[-1]"
         />
       </div>
 
