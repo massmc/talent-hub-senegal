@@ -97,7 +97,7 @@ const domains = [
 
 const ExpertiseSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -145,9 +145,9 @@ const ExpertiseSection = () => {
           ))}
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-[url('/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png')] bg-repeat-x opacity-85"></div>
     </section>
   );
 };
 
 export default ExpertiseSection;
-
