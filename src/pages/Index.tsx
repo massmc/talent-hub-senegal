@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, FileCheck } from "lucide-react";
+import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -306,6 +306,60 @@ const Index = () => {
               <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
                 Démarrer un projet
               </Button>
+            </div>
+
+            <div className="mt-12 grid md:grid-cols-2 gap-8 relative">
+              <div className="absolute top-8 bottom-8 left-1/2 w-px bg-sand-200 -translate-x-1/2 transform rotate-0 hidden md:block" />
+              
+              {/* Column A */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h4 className="text-xl font-semibold text-sand-900 mb-2">A. Je suis autonome</h4>
+                  <p className="text-sand-700">Et je sélectionne la talent ou je constitue mon équipe moi-même.</p>
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">1. J'utilise la plateforme</h5>
+                    <p className="text-sand-700">pour trouver simplement et rapidement les talents correspondants à mes attentes.</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">2. Je suis mis en contact avec les talents</h5>
+                    <p className="text-sand-700">Avec mon Talent Manager, pour valider leur adéquation avec mon projet, je reçois les devis et je fais mon choix.</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">3. Je contractualise</h5>
+                    <p className="text-sand-700">Et je suis l'avancement de mon projet à l'aide des outils de suivi de la plateforme WIM.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Column B */}
+              <div className="space-y-8">
+                <div className="text-center">
+                  <h4 className="text-xl font-semibold text-sand-900 mb-2">B. Je soumets mon brief</h4>
+                  <p className="text-sand-700">Et je suis accompagné dans ma recherche d'un talent ou la constitution de mon équipe.</p>
+                </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">1. SenduTalent fait une sélection sur-mesure</h5>
+                    <p className="text-sand-700">Et me propose une short-list de Talents ou une équipe qui correspond à mes attentes.</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">2. Je valide ma sélection</h5>
+                    <p className="text-sand-700">je fais les entretiens nécessaires avec le talent sélectionné et je valide le devis correspondant.</p>
+                  </div>
+                  
+                  <div>
+                    <h5 className="font-semibold text-sand-900 mb-2">3. Je contractualise</h5>
+                    <p className="text-sand-700">Et je suis l'avancement de mon projet à l'aide des outils de suivi de la plateforme SenduTelent CRM.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
