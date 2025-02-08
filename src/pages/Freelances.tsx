@@ -145,8 +145,8 @@ const FreelancesPage = () => {
                 <UserPlus className="w-8 h-8 text-sand-500" />
               </div>
               <h3 className="text-xl font-semibold mb-3">1. Inscrivez-vous gratuitement</h3>
-              <p className="text-gray-600">
-                Créez votre profil et passez nos tests de sélection.
+              <p className="text-gray-600 min-h-[4rem]">
+                Créez votre profil en quelques minutes et complétez nos tests de qualification technique.
               </p>
             </div>
             
@@ -154,9 +154,9 @@ const FreelancesPage = () => {
               <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-sand-200 transition-colors">
                 <Target className="w-8 h-8 text-sand-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">2. Définissez votre mission idéale</h3>
-              <p className="text-gray-600">
-                Indiquez vos préférences (type de mission, durée, tarif).
+              <h3 className="text-xl font-semibold mb-3">2. Définissez vos critères</h3>
+              <p className="text-gray-600 min-h-[4rem]">
+                Précisez vos préférences en termes de mission, durée et taux journalier souhaité.
               </p>
             </div>
             
@@ -164,9 +164,9 @@ const FreelancesPage = () => {
               <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-sand-200 transition-colors">
                 <Gift className="w-8 h-8 text-sand-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">3. Recevez des offres sur-mesure</h3>
-              <p className="text-gray-600">
-                Notre équipe sélectionne des opportunités qui correspondent exactement à votre profil et vous accompagne tout au long de la mission.
+              <h3 className="text-xl font-semibold mb-3">3. Recevez des opportunités</h3>
+              <p className="text-gray-600 min-h-[4rem]">
+                Découvrez des missions parfaitement adaptées à votre profil avec un accompagnement personnalisé.
               </p>
             </div>
           </div>
