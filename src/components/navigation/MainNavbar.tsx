@@ -3,13 +3,14 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Link } from "react-router-dom";
 
 const menuItems = [
-  "À propos de nous",
-  "Agences / ESN",
-  "Freelances",
-  "Marketplace",
-  "Contact"
+  { label: "À propos de nous", path: "/a-propos" },
+  { label: "Agences / ESN", path: "/agences" },
+  { label: "Freelances", path: "/freelances" },
+  { label: "Marketplace", path: "/marketplace" },
+  { label: "Contact", path: "/contact" }
 ];
 
 const MainNavbar = () => {
@@ -21,7 +22,9 @@ const MainNavbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center">
-            <span className="text-xl md:text-2xl font-bold text-sand-100">SenduTalent</span>
+            <Link to="/" className="text-xl md:text-2xl font-bold text-sand-100">
+              SenduTalent
+            </Link>
           </div>
           
           <button 
@@ -34,13 +37,13 @@ const MainNavbar = () => {
 
           <div className="hidden md:flex space-x-8">
             {menuItems.map((item) => (
-              <a
-                key={item}
-                href="#"
+              <Link
+                key={item.label}
+                to={item.path}
                 className="text-sand-300 hover:text-sand-100 transition-colors"
               >
-                {item}
-              </a>
+                {item.label}
+              </Link>
             ))}
           </div>
 
@@ -48,13 +51,13 @@ const MainNavbar = () => {
             <div className="absolute top-full left-0 right-0 bg-black/95 py-4 md:hidden">
               <div className="container mx-auto px-4 space-y-4">
                 {menuItems.map((item) => (
-                  <a
-                    key={item}
-                    href="#"
+                  <Link
+                    key={item.label}
+                    to={item.path}
                     className="block text-sand-300 hover:text-sand-100 transition-colors py-2"
                   >
-                    {item}
-                  </a>
+                    {item.label}
+                  </Link>
                 ))}
               </div>
             </div>
