@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 const menuItems = [
-  "Contactez-nous",
-  "Entreprises",
+  "À propos de nous",
   "Agences / ESN",
   "Freelances",
-  "Marketplace"
+  "Marketplace",
+  "Contact"
 ];
 
 const MainNavbar = () => {
