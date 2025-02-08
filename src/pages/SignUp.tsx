@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -93,8 +92,8 @@ const SignUp = () => {
       <div className="container mx-auto px-4 py-24">
         <Card className="max-w-xl mx-auto">
           <CardHeader>
-            <CardTitle className="text-2xl text-center">Créer un compte</CardTitle>
-            <CardDescription className="text-center">
+            <CardTitle className="text-2xl text-center text-white">Créer un compte</CardTitle>
+            <CardDescription className="text-center text-white">
               Rejoignez SenduTalent en tant que freelance, agence ou client
             </CardDescription>
           </CardHeader>
@@ -107,7 +106,7 @@ const SignUp = () => {
                     name="firstName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Prénom</FormLabel>
+                        <FormLabel className="text-white">Prénom</FormLabel>
                         <FormControl>
                           <Input placeholder="John" {...field} />
                         </FormControl>
@@ -120,7 +119,7 @@ const SignUp = () => {
                     name="lastName"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Nom</FormLabel>
+                        <FormLabel className="text-white">Nom</FormLabel>
                         <FormControl>
                           <Input placeholder="Doe" {...field} />
                         </FormControl>
@@ -135,7 +134,7 @@ const SignUp = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel className="text-white">Email</FormLabel>
                       <FormControl>
                         <Input type="email" placeholder="john.doe@example.com" {...field} />
                       </FormControl>
@@ -149,7 +148,7 @@ const SignUp = () => {
                   name="profileType"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Type de profil</FormLabel>
+                      <FormLabel className="text-white">Type de profil</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
@@ -172,7 +171,7 @@ const SignUp = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Mot de passe</FormLabel>
+                      <FormLabel className="text-white">Mot de passe</FormLabel>
                       <FormControl>
                         <Input type="password" {...field} />
                       </FormControl>
@@ -186,7 +185,7 @@ const SignUp = () => {
                   name="confirmPassword"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Confirmer le mot de passe</FormLabel>
+                      <FormLabel className="text-white">Confirmer le mot de passe</FormLabel>
                       <FormControl>
                         <Input type="password" {...field} />
                       </FormControl>
@@ -208,4 +207,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-
