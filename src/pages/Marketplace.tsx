@@ -5,7 +5,7 @@ import { FiltersProvider } from "@/components/marketplace/FiltersContext";
 
 const MarketplacePage = () => {
   return (
-    <div className="min-h-screen bg-geometric-pattern bg-fixed bg-cover bg-center bg-sand-50/90 bg-blend-overlay">
+    <div className="min-h-screen bg-geometric-pattern bg-fixed bg-cover bg-center bg-sand-50 bg-blend-overlay">
       <MainNavbar />
       
       <div className="relative h-[300px] bg-sand-900 mb-8 md:mb-16">
@@ -16,12 +16,12 @@ const MarketplacePage = () => {
             opacity: 0.3 
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-sand-900/50 to-sand-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sand-900/50 to-sand-900/90" />
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
             🌍 Découvrez les meilleurs talents IT sur Sendu Talent
           </h1>
-          <p className="text-lg md:text-xl text-sand-100 max-w-3xl">
+          <p className="text-lg md:text-xl text-sand-50 max-w-3xl drop-shadow-lg font-medium">
             🔍 Trouvez le freelance idéal grâce à nos filtres avancés et une présentation claire des profils
           </p>
         </div>
