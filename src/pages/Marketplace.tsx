@@ -12,7 +12,7 @@ const MarketplacePage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')",
             opacity: 0.2 
           }}
         />
