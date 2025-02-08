@@ -41,4 +41,14 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
                 alt="Professional consultant working on a digital project"
-                className="w-full max-w-md mx
+                className="w-full max-w-md mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Index;
