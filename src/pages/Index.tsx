@@ -461,7 +461,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2"
+                className="order-2 md:order-2 relative"
               >
                 <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
@@ -474,7 +474,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-1 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Shield className="w-8 h-8 text-sand-300" />
@@ -505,7 +505,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 relative"
+                className="order-2 md:order-2 relative"
               >
                 <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
@@ -518,7 +518,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-1 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Briefcase className="w-8 h-8 text-sand-300" />
