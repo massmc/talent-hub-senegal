@@ -144,6 +144,19 @@ const ExpertiseSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full max-w-4xl mx-auto mb-16"
+        >
+          <img 
+            src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
+            alt="Motif décoratif"
+            className="w-full h-auto"
+          />
+        </motion.div>
       </div>
       <div 
         className="absolute bottom-0 left-0 right-0 w-full h-12 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-100"
