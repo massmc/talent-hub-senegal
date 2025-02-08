@@ -135,13 +135,14 @@ const SearchSection = () => {
 
               <div className="space-y-4">
                 <Label>Tarif journalier (€)</Label>
-                <div className="pt-2">
+                <div className="pt-2 bg-white p-4 rounded-lg border border-sand-200">
                   <Slider
                     defaultValue={[priceRange[0], priceRange[1]]}
                     max={2000}
                     min={0}
                     step={50}
                     onValueChange={(value) => setPriceRange([value[0], value[1]])}
+                    className="bg-white"
                   />
                   <div className="flex justify-between mt-2 text-sm text-sand-600">
                     <span>{priceRange[0]}€</span>
