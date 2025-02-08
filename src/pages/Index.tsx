@@ -419,6 +419,173 @@ const Index = () => {
           </motion.div>
         </div>
       </section>
+
+      <section className="bg-black py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="space-y-16">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-2 md:order-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Comment trouver un Talent sur Sendu Talent ?</h2>
+                <p className="text-sand-300 mb-4">
+                  Rien de plus simple ! Depuis votre espace client, accédez à la <span className="text-sand-100">marketplace</span> et sélectionnez les profils qui correspondent à vos besoins. Vous pouvez ensuite leur envoyer une invitation directement via notre <span className="text-sand-100">Talent Manager</span> pour entamer les discussions.
+                </p>
+                <p className="text-sand-300">
+                  Avec <span className="text-sand-100">Sendu Talent</span>, le recrutement devient plus rapide et efficace.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1 md:order-2"
+              >
+                <img 
+                  src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
+                  alt="Trouver un talent sur Sendu Talent"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </motion.div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-2"
+              >
+                <img 
+                  src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
+                  alt="Sécurité et conformité"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Sécurité et conformité</h2>
+                <p className="text-sand-300 mb-6">
+                  Chez <span className="text-sand-100">Sendu Talent</span>, nous garantissons une gestion conforme et sécurisée de vos missions. Nous vérifions et centralisons les documents légaux de chaque talent pour assurer leur conformité et nous nous chargeons de la contractualisation dans le respect des réglementations en vigueur.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Protection juridique :</span> Notre contrat cadre vous protège contre le prêt illicite de main-d'œuvre, le délit de marchandage et le risque de requalification.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Propriété intellectuelle sécurisée :</span> Vous bénéficiez d'un <span className="text-sand-100">coffre-fort numérique</span> où sont stockés tous les documents relatifs à l'obligation de vigilance et aux droits d'exploitation.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-2 md:order-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Gestion simplifiée et contractualisation</h2>
+                <p className="text-sand-300 mb-6">
+                  Avec <span className="text-sand-100">Sendu Talent</span>, tout est centralisé :
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Un seul fournisseur référencé :</span> Simplifiez la gestion administrative grâce à un contrat unique.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Réduction des coûts de gestion :</span> Gagnez du temps avec un interlocuteur unique pour la gestion des contrats et des paiements.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Flexibilité contractuelle :</span> Un <span className="text-sand-100">Contrat Cadre unique</span>, puis un simple avenant pour chaque mission.
+                    </p>
+                  </div>
+                </div>
+                <p className="text-sand-300 mt-6">
+                  Vous suivez tout en temps réel via un <span className="text-sand-100">tableau de bord détaillé</span>.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1 md:order-2"
+              >
+                <img 
+                  src="/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png"
+                  alt="Gestion simplifiée"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </motion.div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-2"
+              >
+                <img 
+                  src="/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png"
+                  alt="Tarification"
+                  className="w-full rounded-lg shadow-xl"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Combien ça coûte ?</h2>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Aucun abonnement, aucun coût pour le Talent.</span>
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Ne payez qu'en cas de succès !</span>
+                    </p>
+                  </div>
+                </div>
+                <p className="text-sand-300 mb-4">
+                  Inscrivez-vous, soumettez votre besoin et recevez gratuitement <span className="text-sand-100">les 3 meilleurs profils</span> sélectionnés pour vous. Notre commission, transparente et proportionnelle au <span className="text-sand-100">Tarif Journalier du Talent</span>, est uniquement à la charge du client en cas de mission validée.
+                </p>
+                <p className="text-sand-300">
+                  Avec <span className="text-sand-100">Sendu Talent</span>, aucun frais caché, tout est clair et équitable. 🚀
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
