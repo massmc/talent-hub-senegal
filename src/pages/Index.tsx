@@ -284,9 +284,9 @@ const Index = () => {
               className="relative"
             >
               <img 
-                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
+                src="/lovable-uploads/0780ef47-9b37-4625-add8-77cf53c70476.png"
                 alt="Illustration de feuilles avec checklist"
-                className="w-full rounded-lg shadow-xl"
+                className="w-full object-contain mix-blend-darken"
               />
             </motion.div>
           </div>
