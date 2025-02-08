@@ -145,7 +145,9 @@ const ExpertiseSection = () => {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-[url('/lovable-uploads/412af507-df22-47f6-ba9a-e73124e9d6a3.png')] bg-repeat-x opacity-85"></div>
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-32 bg-[url('/lovable-uploads/fbe57dc2-8aeb-4077-af26-98786330fa38.png')] bg-repeat-x bg-bottom opacity-90"
+      ></div>
     </section>
   );
 };
