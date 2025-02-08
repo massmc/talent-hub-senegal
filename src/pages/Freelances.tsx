@@ -46,14 +46,30 @@ const FreelancesPage = () => {
       <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-sand-500 to-terracotta-500">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Donnez un nouvel élan à votre carrière de freelance
+            Développez votre carrière avec Sendu Talent
           </h1>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Rejoignez SenduTalent et accédez aux meilleures opportunités du marché tout en bénéficiant d'un accompagnement sur mesure.
-          </p>
-          <Button className="bg-white text-sand-500 hover:bg-sand-100 text-lg px-8 py-6">
-            Rejoindre la communauté
-          </Button>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-xl text-white/90">
+              Trouvez des missions adaptées à vos compétences et disponibilités, tout en bénéficiant d'un accompagnement personnalisé.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 text-white/90 mt-8">
+              <div className="bg-white/10 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2">Missions de qualité</h3>
+                <p className="text-sm">Accédez à des projets IT ambitieux auprès d'entreprises sérieuses</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2">Zéro frais</h3>
+                <p className="text-sm">Service 100% gratuit pour les freelances</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <h3 className="font-semibold mb-2">Gestion administrative</h3>
+                <p className="text-sm">On s'occupe de tout, concentrez-vous sur votre expertise</p>
+              </div>
+            </div>
+            <Button className="bg-white text-sand-500 hover:bg-sand-100 text-lg px-8 py-6 mt-8">
+              Rejoindre gratuitement
+            </Button>
+          </div>
         </div>
       </section>
 
