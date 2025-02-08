@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Search, Shield, Euro } from "lucide-react";
+import { Search, Shield, Euro, CheckCircle } from "lucide-react";
 
 const TalentSearchSection = () => {
   return (
