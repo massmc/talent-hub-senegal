@@ -1,4 +1,4 @@
-<lov-code>
+
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -602,4 +602,57 @@ const domains = [
       },
       {
         text: "Développeur Fullstack",
-        
+        icon: <Code className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Développeur Mobile",
+        icon: <Smartphone className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Tech Lead",
+        icon: <Network className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "DevOps",
+        icon: <Shield className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Quality Assurance",
+        icon: <Target className="w-4 h-4 text-sand-500 inline mr-2" />
+      }
+    ]
+  },
+  {
+    title: "Design & Création",
+    icon: <Palette className="w-8 h-8 text-sand-300 mb-4" />,
+    items: [
+      {
+        text: "UI/UX Design",
+        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Design Graphique",
+        icon: <Paintbrush className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Motion Design",
+        icon: <Image className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Branding & Identité",
+        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Prototypage",
+        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
+      },
+      {
+        text: "Design System",
+        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
+      }
+    ]
+  }
+];
+
+export default Index;
+
