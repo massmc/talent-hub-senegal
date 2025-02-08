@@ -8,15 +8,30 @@ import {
 
 const FaqSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-sand-50 to-sand-100">
-      <div className="container mx-auto px-4">
+    <section className="py-20 relative">
+      {/* Graffiti background effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-sand-50 to-sand-100 overflow-hidden">
+        <div className="absolute -right-24 top-0 w-96 h-96 bg-terracotta-400/20 rounded-full blur-3xl" />
+        <div className="absolute left-12 top-24 w-72 h-72 bg-sand-400/30 rounded-full blur-3xl" />
+        <div className="absolute right-24 bottom-12 w-80 h-80 bg-ochre-400/20 rounded-full blur-3xl" />
+        <div 
+          className="absolute left-0 bottom-0 w-full h-full opacity-5"
+          style={{
+            backgroundImage: `url('/lovable-uploads/tribal-pattern.png')`,
+            backgroundSize: '400px',
+            backgroundRepeat: 'repeat',
+          }}
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-sand-900 text-center mb-12">
             Questions fréquentes
           </h2>
           
           <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+            <AccordionItem value="item-1" className="bg-white/90 backdrop-blur-sm rounded-lg border border-sand-200 shadow-sm hover:shadow-md transition-all duration-300">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
                 Comment trouver un talent sur la plateforme ?
               </AccordionTrigger>
@@ -30,7 +45,7 @@ const FaqSection = () => {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+            <AccordionItem value="item-2" className="bg-white/90 backdrop-blur-sm rounded-lg border border-sand-200 shadow-sm hover:shadow-md transition-all duration-300">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
                 Quel type de profils proposez-vous ?
               </AccordionTrigger>
