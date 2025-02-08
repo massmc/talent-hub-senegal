@@ -38,6 +38,7 @@ const WhySection = () => {
           </div>
         </div>
       </div>
+      <div className="absolute top-0 right-0 bottom-0 w-1/3 bg-[url('/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png')] opacity-60"></div>
     </section>
   );
 };
