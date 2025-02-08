@@ -10,6 +10,7 @@ import FreelancesPage from "./pages/Freelances";
 import AgencesPage from "./pages/Agences";
 import ContactPage from "./pages/Contact";
 import MarketplacePage from "./pages/Marketplace";
+import SignUp from "./pages/SignUp";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/agences" element={<AgencesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/marketplace" element={<MarketplacePage />} />
+          <Route path="/inscription" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -69,12 +69,14 @@ const MainNavbar = () => {
           )}
 
           <div className="hidden md:flex items-center space-x-2 md:space-x-4">
-            <Button 
-              variant="outline" 
-              className="bg-black text-white border-2 border-white hover:bg-black/80 text-sm md:text-base px-2 md:px-4"
-            >
-              {isMobile ? "Créer" : "Créer un compte"}
-            </Button>
+            <Link to="/inscription">
+              <Button 
+                variant="outline" 
+                className="bg-black text-white border-2 border-white hover:bg-black/80 text-sm md:text-base px-2 md:px-4"
+              >
+                {isMobile ? "Créer" : "Créer un compte"}
+              </Button>
+            </Link>
             <Button className="bg-sand-500 hover:bg-sand-600 text-white text-sm md:text-base px-2 md:px-4">
               {isMobile ? "Login" : "Se connecter"}
             </Button>
