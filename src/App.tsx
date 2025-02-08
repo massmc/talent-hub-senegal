@@ -11,6 +11,7 @@ import AgencesPage from "./pages/Agences";
 import ContactPage from "./pages/Contact";
 import MarketplacePage from "./pages/Marketplace";
 import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/inscription" element={<SignUp />} />
+          <Route path="/connexion" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -35,3 +37,4 @@ const App = () => (
 );
 
 export default App;
+
