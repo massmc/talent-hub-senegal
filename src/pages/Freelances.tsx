@@ -1,12 +1,12 @@
 
-import { MainNavbar } from "@/components/navigation/MainNavbar";
+import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Briefcase, HandShake, LightBulb, MessageSquare, Users } from "lucide-react";
+import { Award, Briefcase, Handshake, Lightbulb, MessageSquare, Users } from "lucide-react";
 
 const benefits = [
   {
-    icon: <HandShake className="w-8 h-8 text-sand-500" />,
+    icon: <Handshake className="w-8 h-8 text-sand-500" />,
     title: "Missions de qualité",
     description: "Accédez à des missions challengeantes auprès de grandes entreprises et startups innovantes."
   },
@@ -26,7 +26,7 @@ const benefits = [
     description: "Profitez d'un suivi dédié et de conseils pour développer votre activité."
   },
   {
-    icon: <LightBulb className="w-8 h-8 text-sand-500" />,
+    icon: <Lightbulb className="w-8 h-8 text-sand-500" />,
     title: "Développement professionnel",
     description: "Évoluez grâce à des formations et au partage d'expérience entre pairs."
   },
