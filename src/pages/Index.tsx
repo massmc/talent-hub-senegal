@@ -143,43 +143,59 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-sand-50">
+      <section className="py-16 md:py-24 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-sand-900">Pourquoi SenduTalent?</h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-black text-sm md:text-base">
-                  SenduTalent est une <span className="font-semibold">plateforme en ligne</span> qui permet aux{" "}
-                  <span className="font-semibold">entreprises</span> de{" "}
-                  <span className="font-semibold">trouver et de travailler</span> avec des 
-                  freelancers et des consultants du digital basés au Sénégal.
-                </p>
-                <p className="text-black text-sm md:text-base">
-                  En utilisant SenduTalent, vous pouvez accéder à un large éventail de talents tech 
-                  offshore au Sénégal et trouver les professionnels qui répondent le mieux à vos besoins 
-                  pour votre projet. La plateforme permet également de gérer les projets et les 
-                  communications avec les freelancers et consultants de manière efficace.
-                </p>
-                <div className="pt-4">
-                  <Button className="bg-sand-500 hover:bg-sand-600 text-white px-4 md:px-8 w-full sm:w-auto">
-                    Découvrir les talents
-                  </Button>
+          <div className="space-y-16">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-2 md:order-2 relative"
+              >
+                <img 
+                  src="/lovable-uploads/cb1bdfce-75b6-47c1-8fd3-6900e3382e12.png"
+                  alt="Illustration des coûts et tarification"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
+                  <Briefcase className="w-8 h-8 text-sand-300" />
+                  Combien ça coûte ?
+                </h2>
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Aucun abonnement, aucun coût pour le Talent.</span>
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
+                    <p className="text-sand-300">
+                      <span className="text-sand-100 font-semibold">Ne payez qu'en cas de succès !</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="relative mt-8 md:mt-0">
-              <img 
-                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
-                alt="Professional consultant working on a digital project"
-                className="w-full max-w-md mx-auto rounded-lg shadow-xl"
-              />
+                <p className="text-sand-300 mb-4">
+                  Inscrivez-vous, soumettez votre besoin et recevez gratuitement <span className="text-sand-100">les 3 meilleurs profils</span> sélectionnés pour vous. Notre commission, transparente et proportionnelle au <span className="text-sand-100">Tarif Journalier du Talent</span>, est uniquement à la charge du client en cas de mission validée.
+                </p>
+                <p className="text-sand-300">
+                  Avec <span className="text-sand-100">Sendu Talent</span>, aucun frais caché, tout est clair et équitable. 🚀
+                </p>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black">
+      <section className="py-16 md:py-24 bg-sand-50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -187,7 +203,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-sand-100 mb-4">Nos domaines d'expertise</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-sand-900 mb-4">Nos domaines d'expertise</h2>
             <p className="text-sand-300 text-lg max-w-2xl mx-auto">
               Découvrez notre large éventail de services pour répondre à tous vos besoins digitaux
             </p>
@@ -245,7 +261,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               className="relative order-2 md:order-2"
@@ -495,53 +511,6 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              </motion.div>
-            </div>
-
-            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="order-2 md:order-2 relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
-                <img 
-                  src="/lovable-uploads/cb1bdfce-75b6-47c1-8fd3-6900e3382e12.png"
-                  alt="Illustration des coûts et tarification"
-                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
-                />
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="order-1 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
-              >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
-                  <Briefcase className="w-8 h-8 text-sand-300" />
-                  Combien ça coûte ?
-                </h2>
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
-                    <p className="text-sand-300">
-                      <span className="text-sand-100 font-semibold">Aucun abonnement, aucun coût pour le Talent.</span>
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
-                    <p className="text-sand-300">
-                      <span className="text-sand-100 font-semibold">Ne payez qu'en cas de succès !</span>
-                    </p>
-                  </div>
-                </div>
-                <p className="text-sand-300 mb-4">
-                  Inscrivez-vous, soumettez votre besoin et recevez gratuitement <span className="text-sand-100">les 3 meilleurs profils</span> sélectionnés pour vous. Notre commission, transparente et proportionnelle au <span className="text-sand-100">Tarif Journalier du Talent</span>, est uniquement à la charge du client en cas de mission validée.
-                </p>
-                <p className="text-sand-300">
-                  Avec <span className="text-sand-100">Sendu Talent</span>, aucun frais caché, tout est clair et équitable. 🚀
-                </p>
               </motion.div>
             </div>
           </div>
