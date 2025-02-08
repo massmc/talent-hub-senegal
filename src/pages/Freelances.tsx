@@ -1,4 +1,3 @@
-
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -46,16 +45,13 @@ const FreelancesPage = () => {
       <section className="relative pt-32 pb-16 px-4">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ 
-            backgroundImage: "url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')",
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+          style={{
             position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
+            inset: 0,
+            backgroundImage: "url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            zIndex: 0,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-sand-500/80 to-terracotta-500/80" />
