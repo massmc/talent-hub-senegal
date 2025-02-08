@@ -9,8 +9,7 @@ const menuItems = [
   "Entreprises",
   "Agences / ESN",
   "Freelances",
-  "Marketplace",
-  "Blog"
+  "Marketplace"
 ];
 
 const MainNavbar = () => {
@@ -79,4 +78,3 @@ const MainNavbar = () => {
 };
 
 export default MainNavbar;
-
