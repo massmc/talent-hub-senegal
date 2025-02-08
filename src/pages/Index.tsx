@@ -423,14 +423,17 @@ const Index = () => {
       <section className="bg-black py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="space-y-16">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 md:order-1"
+                className="order-2 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Comment trouver un Talent sur Sendu Talent ?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
+                  <Search className="w-8 h-8 text-sand-300" />
+                  Comment trouver un Talent sur Sendu Talent ?
+                </h2>
                 <p className="text-sand-300 mb-4">
                   Rien de plus simple ! Depuis votre espace client, accédez à la <span className="text-sand-100">marketplace</span> et sélectionnez les profils qui correspondent à vos besoins. Vous pouvez ensuite leur envoyer une invitation directement via notre <span className="text-sand-100">Talent Manager</span> pour entamer les discussions.
                 </p>
@@ -442,36 +445,41 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 md:order-2"
+                className="order-1 md:order-2 relative"
               >
+                <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
                   src="/lovable-uploads/4da15a37-aea9-4d3a-b63b-f22070c083ff.png"
                   alt="Trouver un talent sur Sendu Talent"
-                  className="w-full rounded-lg shadow-xl"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 className="order-2"
               >
+                <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
                   src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
                   alt="Sécurité et conformité"
-                  className="w-full rounded-lg shadow-xl"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1"
+                className="order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Sécurité et conformité</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
+                  <Shield className="w-8 h-8 text-sand-300" />
+                  Sécurité et conformité
+                </h2>
                 <p className="text-sand-300 mb-6">
                   Chez <span className="text-sand-100">Sendu Talent</span>, nous garantissons une gestion conforme et sécurisée de vos missions. Nous vérifions et centralisons les documents légaux de chaque talent pour assurer leur conformité et nous nous chargeons de la contractualisation dans le respect des réglementations en vigueur.
                 </p>
@@ -492,14 +500,17 @@ const Index = () => {
               </motion.div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 md:order-1"
+                className="order-2 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Gestion simplifiée et contractualisation</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
+                  <FileStack className="w-8 h-8 text-sand-300" />
+                  Gestion simplifiée et contractualisation
+                </h2>
                 <p className="text-sand-300 mb-6">
                   Avec <span className="text-sand-100">Sendu Talent</span>, tout est centralisé :
                 </p>
@@ -531,36 +542,41 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 md:order-2"
+                className="order-1 md:order-2 relative"
               >
+                <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
                   src="/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png"
                   alt="Gestion simplifiée"
-                  className="w-full rounded-lg shadow-xl"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 className="order-2"
               >
+                <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
                   src="/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png"
                   alt="Tarification"
-                  className="w-full rounded-lg shadow-xl"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1"
+                className="order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100">Combien ça coûte ?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
+                  <Briefcase className="w-8 h-8 text-sand-300" />
+                  Combien ça coûte ?
+                </h2>
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
