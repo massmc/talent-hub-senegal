@@ -82,11 +82,11 @@ const FreelancerGrid = () => {
   const getLevelBadge = (level: Freelancer["experience"]["level"]) => {
     switch (level) {
       case "junior":
-        return <Badge>Junior</Badge>;
+        return <Badge variant="default">Junior</Badge>;
       case "confirmed":
         return <Badge variant="secondary">Confirmé</Badge>;
       case "expert":
-        return <Badge variant="primary">Expert</Badge>;
+        return <Badge variant="default">Expert</Badge>;
     }
   };
 
