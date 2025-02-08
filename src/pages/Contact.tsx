@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -111,11 +112,26 @@ const ContactPage = () => {
     <div className="min-h-screen bg-geometric-pattern bg-fixed bg-cover bg-center bg-sand-50/90 bg-blend-overlay">
       <MainNavbar />
       
-      <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-sand-900 text-center mb-8">
-          Contactez-nous
-        </h1>
-        
+      <div className="relative h-[300px] bg-sand-900 mb-16">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ 
+            backgroundImage: "url('/lovable-uploads/b2ac4bb8-3988-4e2e-9caa-c7bf13c65010.png')",
+            opacity: 0.3 
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-sand-900/50 to-sand-900/80" />
+        <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+          <h1 className="text-5xl font-bold text-white mb-4">
+            Contactez-nous
+          </h1>
+          <p className="text-xl text-sand-100 max-w-2xl">
+            Nous sommes là pour vous accompagner dans vos projets digitaux
+          </p>
+        </div>
+      </div>
+      
+      <main className="container mx-auto px-4 pb-16">
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {userTypes.map(({ id, title, icon: Icon, description }) => (
             <Card
