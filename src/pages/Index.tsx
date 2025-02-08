@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -143,7 +144,43 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-sand-50">
+      <section className="py-12 md:py-20 bg-sand-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-sand-900">Pourquoi SenduTalent?</h2>
+              <div className="space-y-4 md:space-y-6">
+                <p className="text-black text-sm md:text-base">
+                  SenduTalent est une <span className="font-semibold">plateforme en ligne</span> qui permet aux{" "}
+                  <span className="font-semibold">entreprises</span> de{" "}
+                  <span className="font-semibold">trouver et de travailler</span> avec des 
+                  freelancers et des consultants du digital basés au Sénégal.
+                </p>
+                <p className="text-black text-sm md:text-base">
+                  En utilisant SenduTalent, vous pouvez accéder à un large éventail de talents tech 
+                  offshore au Sénégal et trouver les professionnels qui répondent le mieux à vos besoins 
+                  pour votre projet. La plateforme permet également de gérer les projets et les 
+                  communications avec les freelancers et consultants de manière efficace.
+                </p>
+                <div className="pt-4">
+                  <Button className="bg-sand-500 hover:bg-sand-600 text-white px-4 md:px-8 w-full sm:w-auto">
+                    Découvrir les talents
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-8 md:mt-0">
+              <img 
+                src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
+                alt="Professional consultant working on a digital project"
+                className="w-full max-w-md mx-auto rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -151,7 +188,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-sand-900 mb-4">Nos domaines d'expertise</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-sand-100 mb-4">Nos domaines d'expertise</h2>
             <p className="text-sand-300 text-lg max-w-2xl mx-auto">
               Découvrez notre large éventail de services pour répondre à tous vos besoins digitaux
             </p>
@@ -209,10 +246,23 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative order-2 md:order-2"
+            >
+              <img 
+                src="/lovable-uploads/0780ef47-9b37-4625-add8-77cf53c70476.png"
+                alt="Illustration de feuilles avec checklist"
+                className="w-full object-contain mix-blend-darken"
+              />
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 order-2 md:order-1"
+              className="space-y-6 order-1 md:order-1"
             >
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-sand-100 rounded-lg">
@@ -238,19 +288,6 @@ const Index = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="relative order-1 md:order-2"
-            >
-              <img 
-                src="/lovable-uploads/0780ef47-9b37-4625-add8-77cf53c70476.png"
-                alt="Illustration de feuilles avec checklist"
-                className="w-full object-contain mix-blend-darken"
-              />
             </motion.div>
           </div>
 
