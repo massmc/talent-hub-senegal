@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex items-center max-w-4xl">
-          <div className="flex-1 bg-sand-900/80 p-6 rounded-african">
+          <div className="flex-1">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
