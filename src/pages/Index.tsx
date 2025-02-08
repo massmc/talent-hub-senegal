@@ -5,6 +5,7 @@ import WhySection from "@/components/home/WhySection";
 import ExpertiseSection from "@/components/home/ExpertiseSection";
 import TalentVerificationSection from "@/components/home/TalentVerificationSection";
 import TalentSearchSection from "@/components/home/TalentSearchSection";
+import FaqSection from "@/components/home/FaqSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,10 +17,10 @@ const Index = () => {
       <ExpertiseSection />
       <TalentVerificationSection />
       <TalentSearchSection />
+      <FaqSection />
       <Footer />
     </div>
   );
 };
 
 export default Index;
-
