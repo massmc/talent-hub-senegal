@@ -505,60 +505,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
-              >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
-                  <FileStack className="w-8 h-8 text-sand-300" />
-                  Gestion simplifiée et contractualisation
-                </h2>
-                <p className="text-sand-300 mb-6">
-                  Avec <span className="text-sand-100">Sendu Talent</span>, tout est centralisé :
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
-                    <p className="text-sand-300">
-                      <span className="text-sand-100 font-semibold">Un seul fournisseur référencé :</span> Simplifiez la gestion administrative grâce à un contrat unique.
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
-                    <p className="text-sand-300">
-                      <span className="text-sand-100 font-semibold">Réduction des coûts de gestion :</span> Gagnez du temps avec un interlocuteur unique pour la gestion des contrats et des paiements.
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
-                    <p className="text-sand-300">
-                      <span className="text-sand-100 font-semibold">Flexibilité contractuelle :</span> Un <span className="text-sand-100">Contrat Cadre unique</span>, puis un simple avenant pour chaque mission.
-                    </p>
-                  </div>
-                </div>
-                <p className="text-sand-300 mt-6">
-                  Vous suivez tout en temps réel via un <span className="text-sand-100">tableau de bord détaillé</span>.
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="order-1 md:order-2 relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
-                <img 
-                  src="/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png"
-                  alt="Gestion simplifiée"
-                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
-                />
-              </motion.div>
-            </div>
-
-            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="order-2"
+                className="order-2 relative"
               >
                 <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
