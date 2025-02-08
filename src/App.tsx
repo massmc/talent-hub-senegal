@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import FreelancesPage from "./pages/Freelances";
 import AgencesPage from "./pages/Agences";
 import ContactPage from "./pages/Contact";
+import MarketplacePage from "./pages/Marketplace";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/freelances" element={<FreelancesPage />} />
           <Route path="/agences" element={<AgencesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
