@@ -1,4 +1,3 @@
-
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,10 @@ import {
   Briefcase, 
   CheckCircle2,
   Gift, 
-  Handshake, 
+  Handshake,
+  Laptop,
   Lightbulb, 
+  LineChart,
   MessageSquare, 
   Target, 
   UserPlus, 
@@ -129,83 +130,58 @@ const FreelancesPage = () => {
         </div>
       </section>
 
-      {/* Nos promesses Section */}
-      <section className="py-20 px-4 bg-sand-100">
+      {/* Nos avantages pour la communauté Section */}
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-            Nos promesses pour les freelances
+            Nos avantages pour la communauté
           </h2>
           
           <div className="grid gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-sand-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <CheckCircle2 className="w-8 h-8 text-sand-500" />
+                  <Users className="w-8 h-8 text-sand-500" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    Des missions qualifiées et bien rémunérées
+                    Accès à une communauté IT dynamique
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Nous faisons le tri pour vous et vous recommandons aux entreprises sérieuses en recherche de votre profil.</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Vous ne perdez pas de temps avec des offres inadaptées.</span>
-                    </li>
-                  </ul>
+                  <p className="text-gray-600">
+                    Échangez avec d'autres freelances, partagez des opportunités et évoluez ensemble.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-sand-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <CheckCircle2 className="w-8 h-8 text-sand-500" />
+                  <Laptop className="w-8 h-8 text-sand-500" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    Une gestion administrative simplifiée
+                    Location d'équipements informatiques
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Aucun souci de facturation : Sendu Talent gère les contrats et les paiements pour vous.</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Paiements sécurisés et garantis : Nous nous assurons que vous soyez payé à temps.</span>
-                    </li>
-                  </ul>
+                  <p className="text-gray-600">
+                    Besoin d'un ordinateur ou d'un équipement réseau ? Nous mettons à disposition du matériel en location pour vous aider à mener à bien vos missions.
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="bg-sand-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <CheckCircle2 className="w-8 h-8 text-sand-500" />
+                  <LineChart className="w-8 h-8 text-sand-500" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                    Zéro frais pour les freelances
+                    Tableau de bord financier intuitif
                   </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Inscription gratuite</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Aucune commission prélevée sur vos revenus</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 rounded-full bg-sand-500"></div>
-                      <span>Notre rémunération est à la charge des entreprises</span>
-                    </li>
-                  </ul>
+                  <p className="text-gray-600">
+                    Suivez vos revenus, paiements et contrats en temps réel depuis votre espace personnel.
+                  </p>
                 </div>
               </div>
             </div>
