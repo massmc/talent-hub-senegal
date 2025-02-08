@@ -23,9 +23,6 @@ import {
   UserPlus, 
   Users 
 } from "lucide-react";
-import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
-import { useEffect } from "react";
 
 const benefits = [
   {
@@ -61,33 +58,18 @@ const benefits = [
 ];
 
 const FreelancesPage = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
-
-  const slides = [
-    '/lovable-uploads/ffc2776f-3d19-4afc-b2d8-9fe80f29e157.png',
-    '/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png',
-  ];
-
   return (
     <div className="min-h-screen bg-sand-50">
       <MainNavbar />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-4 min-h-[600px]">
-        <div ref={emblaRef} className="absolute inset-0 overflow-hidden">
-          <div className="flex h-full">
-            {slides.map((slide, index) => (
-              <div key={index} className="relative flex-none w-full h-full">
-                <div 
-                  className="absolute inset-0 bg-center bg-cover transition-opacity duration-500"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${slide}')`,
-                  }}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        <div 
+          className="absolute inset-0 bg-center bg-cover"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/ffc2776f-3d19-4afc-b2d8-9fe80f29e157.png')`,
+          }}
+        />
 
         {/* Content */}
         <div className="container mx-auto text-center relative z-10">
