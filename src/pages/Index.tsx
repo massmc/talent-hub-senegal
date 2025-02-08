@@ -302,17 +302,18 @@ const Index = () => {
                 Sendu Talent vous permet de trouver les meilleurs talents pour vos besoins, en vous connectant directement avec des professionnels qualifiés au sein de notre communauté. Vous pouvez soit sélectionner les talents qui correspondent à vos critères, soit nous confier la recherche du profil idéal. Une fois votre choix fait, la contractualisation s'effectue en ligne en toute simplicité, et vous pouvez suivre l'avancement de votre projet en toute transparence via notre plateforme.
               </p>
             </div>
-            <div className="text-center mt-6">
+
+            <div className="text-center my-8">
               <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
                 Démarrer un projet
               </Button>
             </div>
 
-            <h3 className="text-xl md:text-2xl font-semibold text-sand-900 text-center mt-8 mb-12">
+            <h3 className="text-xl md:text-2xl font-semibold text-sand-900 text-center mb-12">
               Deux alternatives s'offrent à vous
             </h3>
 
-            <div className="mt-12 grid md:grid-cols-2 gap-8 relative">
+            <div className="grid md:grid-cols-2 gap-8 relative">
               <div className="absolute top-8 bottom-8 left-1/2 w-px bg-sand-200 -translate-x-1/2 transform -rotate-6 hidden md:block" />
               
               <motion.div 
