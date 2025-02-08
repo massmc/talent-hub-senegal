@@ -1,9 +1,10 @@
 
-import { Search, MapPin, Star, Languages, Euro, Filter } from "lucide-react";
+import { Search, MapPin, Star, Languages, Euro, Filter, Code, Target, Palette } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -22,6 +23,24 @@ import {
 import { Slider } from "@/components/ui/slider";
 import FreelancerGrid from "./FreelancerGrid";
 
+const domains = [
+  {
+    id: "project",
+    label: "Projet & Coaching",
+    icon: <Target className="w-4 h-4 text-sand-600" />,
+  },
+  {
+    id: "tech",
+    label: "Tech & Digital",
+    icon: <Code className="w-4 h-4 text-sand-600" />,
+  },
+  {
+    id: "design",
+    label: "Design & Création",
+    icon: <Palette className="w-4 h-4 text-sand-600" />,
+  },
+];
+
 const SearchSection = () => {
   const {
     search,
@@ -38,9 +57,19 @@ const SearchSection = () => {
     setPriceRange,
     minRating,
     setMinRating,
+    selectedSkills,
+    setSelectedSkills,
   } = useFilters();
 
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
+
+  const handleDomainChange = (domainId: string, checked: boolean) => {
+    if (checked) {
+      setSelectedSkills([...selectedSkills, domainId]);
+    } else {
+      setSelectedSkills(selectedSkills.filter((id) => id !== domainId));
+    }
+  };
 
   return (
     <div className="space-y-6">
@@ -171,6 +200,28 @@ const SearchSection = () => {
             </div>
           </SheetContent>
         </Sheet>
+      </div>
+
+      <div className="flex flex-wrap gap-6 bg-white/80 backdrop-blur-sm p-4 rounded-lg border border-sand-200">
+        <div className="flex items-center text-sm font-medium text-sand-700">
+          Domaines d'expertise :
+        </div>
+        {domains.map((domain) => (
+          <div key={domain.id} className="flex items-center space-x-2">
+            <Checkbox
+              id={domain.id}
+              checked={selectedSkills.includes(domain.id)}
+              onCheckedChange={(checked) => handleDomainChange(domain.id, checked as boolean)}
+            />
+            <Label
+              htmlFor={domain.id}
+              className="flex items-center gap-2 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+            >
+              {domain.icon}
+              {domain.label}
+            </Label>
+          </div>
+        ))}
       </div>
 
       <FreelancerGrid />
