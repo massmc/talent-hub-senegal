@@ -1,13 +1,24 @@
+
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useState } from "react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 
 const Index = () => {
   const isMobile = useIsMobile();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+
+  const slides = [
+    "/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png",
+    "/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png"
+  ];
 
   return (
     <div className="min-h-screen bg-sand-900">
@@ -70,6 +81,24 @@ const Index = () => {
       </nav>
 
       <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
+        <div className="absolute inset-0 overflow-hidden">
+          <div ref={emblaRef} className="h-full">
+            <div className="flex h-full">
+              {slides.map((slide, index) => (
+                <div key={index} className="relative flex-none w-full h-full">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ 
+                      backgroundImage: `url(${slide})`,
+                      filter: 'brightness(0.4)'
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex items-center max-w-4xl">
             <div className="flex-1">
