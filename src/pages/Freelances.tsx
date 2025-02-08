@@ -48,7 +48,7 @@ const FreelancesPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{ 
-            backgroundImage: "url('/lovable-uploads/2783daca-dd5e-45a5-bd5c-ec074c8a6510.png')",
+            backgroundImage: "url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-sand-500/95 to-terracotta-500/95" />
