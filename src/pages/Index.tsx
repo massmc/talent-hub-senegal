@@ -377,7 +377,7 @@ const Index = () => {
                   <h3 className="text-xl font-semibold text-sand-900 mb-2">Processus de vérification rigoureux</h3>
                   <p className="text-sand-700">
                     Nos Talent Managers ont doublement vérifié le niveau de compétences techniques, les références, 
-                    les motivations et, le moment venu, de l'intérêt pour votre mission.
+                    les motivations et, le moment venu, de l'intérêt pour votre projet, je reçois les devis et je fais mon choix.
                   </p>
                 </div>
               </div>
