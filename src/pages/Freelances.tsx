@@ -66,7 +66,6 @@ const FreelancesPage = () => {
   const slides = [
     '/lovable-uploads/9ba9017d-756d-4cda-98bb-e0bbfa7bdc86.png',
     '/lovable-uploads/b454b838-12ff-4220-9c89-fecc87613dd2.png',
-    '/lovable-uploads/a5950a02-ec7f-43f3-a19e-9d8f5f37f352.png'
   ];
 
   useEffect(() => {
@@ -80,15 +79,22 @@ const FreelancesPage = () => {
       <MainNavbar />
       
       {/* Hero Section avec dégradé marron-orange */}
-      <section className="relative pt-32 pb-16 px-4 min-h-[600px]">
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('/lovable-uploads/a5950a02-ec7f-43f3-a19e-9d8f5f37f352.png')`
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-sand-500/80 via-terracotta-500/80 to-sand-700/80" />
+      <section className="relative pt-32 pb-16 px-4 min-h-[600px] bg-gradient-to-br from-sand-500 via-terracotta-500 to-sand-700">
+        <div className="absolute inset-0 overflow-hidden">
+          <div ref={emblaRef} className="h-full">
+            <div className="flex h-full">
+              {slides.map((slide, index) => (
+                <div key={index} className="relative flex-none w-full h-full">
+                  <div 
+                    className="absolute inset-0 bg-center bg-cover"
+                    style={{
+                      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${slide}')`,
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Content */}
