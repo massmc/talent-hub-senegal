@@ -77,7 +77,7 @@ const FreelancesPage = () => {
   return (
     <div className="min-h-screen bg-sand-50">
       <MainNavbar />
-      
+
       {/* Header Section */}
       <header className="bg-sand-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sand-800 to-sand-900 opacity-90" />
