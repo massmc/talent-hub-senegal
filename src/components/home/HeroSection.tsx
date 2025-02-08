@@ -24,11 +24,9 @@ const HeroSection = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ 
-                    backgroundImage: `url(${slide})`,
-                    filter: 'brightness(0.4)'
+                    backgroundImage: `url(${slide})`
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-sand-900/60 to-sand-900/90" />
               </div>
             ))}
           </div>
