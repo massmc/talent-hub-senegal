@@ -1,3 +1,4 @@
+<lov-code>
 import { motion } from "framer-motion";
 import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -455,12 +456,24 @@ const Index = () => {
               </motion.div>
             </div>
 
-            <div className="group relative grid md:grid-cols-1 gap-8 md:gap-12 items-center">
+            <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="order-1 md:order-1 relative flex justify-center items-center"
+              >
+                <img 
+                  src="/lovable-uploads/6c48325c-97f5-486f-bfef-6443e28d190e.png"
+                  alt="Illustration de sécurité et conformité"
+                  className="w-3/4 md:w-4/5 h-auto object-contain"
+                />
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-2 md:order-2 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Shield className="w-8 h-8 text-sand-300" />
@@ -589,56 +602,4 @@ const domains = [
       },
       {
         text: "Développeur Fullstack",
-        icon: <Code className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Développeur Mobile",
-        icon: <Smartphone className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Tech Lead",
-        icon: <Network className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "DevOps",
-        icon: <Shield className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Quality Assurance",
-        icon: <Target className="w-4 h-4 text-sand-500 inline mr-2" />
-      }
-    ]
-  },
-  {
-    title: "Design & Création",
-    icon: <Palette className="w-8 h-8 text-sand-300 mb-4" />,
-    items: [
-      {
-        text: "UI/UX Design",
-        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Design Graphique",
-        icon: <Paintbrush className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Motion Design",
-        icon: <Image className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Branding & Identité",
-        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Prototypage",
-        icon: <PenTool className="w-4 h-4 text-sand-500 inline mr-2" />
-      },
-      {
-        text: "Design System",
-        icon: <Shapes className="w-4 h-4 text-sand-500 inline mr-2" />
-      }
-    ]
-  }
-];
-
-export default Index;
+        
