@@ -534,8 +534,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-sand-100 mb-4">FAQ - Sendu Talent</h2>
-            <p className="text-sand-300 text-lg max-w-2xl mx-auto">
+            <h2 className="text-2xl md:text-4xl font-bold text-sand-900 mb-4">FAQ - Sendu Talent</h2>
+            <p className="text-sand-700 text-lg max-w-2xl mx-auto">
               Trouvez les réponses à vos questions les plus fréquentes
             </p>
           </motion.div>
@@ -545,19 +545,19 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-sand-700/30"
+              className="bg-white rounded-xl p-6 shadow-lg border border-sand-200"
             >
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`}
-                    className="border-b border-sand-700/30 last:border-b-0"
+                    className="border-b border-sand-200 last:border-b-0"
                   >
-                    <AccordionTrigger className="text-left text-sand-100 hover:text-sand-300 transition-colors">
+                    <AccordionTrigger className="text-left text-sand-900 hover:text-sand-700 transition-colors">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-sand-300">
+                    <AccordionContent className="text-sand-700">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -571,7 +571,7 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center mt-12"
             >
-              <p className="text-sand-300 mb-6">Vous avez d'autres questions ?</p>
+              <p className="text-sand-700 mb-6">Vous avez d'autres questions ?</p>
               <Button className="bg-sand-500 hover:bg-sand-600 text-white">
                 Contactez-nous
               </Button>
