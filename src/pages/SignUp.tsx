@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -30,6 +29,7 @@ import {
 } from "@/components/ui/select";
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { useToast } from "@/components/ui/use-toast";
+import Footer from "@/components/Footer";
 
 const signUpSchema = z.object({
   email: z.string().email("Email invalide"),
@@ -65,7 +65,6 @@ const SignUp = () => {
   const onSubmit = async (data: SignUpForm) => {
     setIsLoading(true);
     try {
-      // TODO: Implement actual signup logic here
       console.log("Form data:", data);
       
       toast({
@@ -91,7 +90,6 @@ const SignUp = () => {
     <div className="min-h-screen bg-gradient-to-b from-black to-sand-900">
       <MainNavbar />
       
-      {/* New Header Section */}
       <div 
         className="relative h-64 w-full bg-cover bg-center"
         style={{ 
@@ -234,6 +232,8 @@ const SignUp = () => {
           </CardContent>
         </Card>
       </div>
+      
+      <Footer />
     </div>
   );
 };
