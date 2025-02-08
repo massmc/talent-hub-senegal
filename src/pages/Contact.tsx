@@ -49,6 +49,10 @@ const enterpriseSchema = z.object({
   message: z.string().optional(),
 });
 
+type FreelanceFormData = z.infer<typeof freelanceSchema>;
+type AgencyFormData = z.infer<typeof agencySchema>;
+type EnterpriseFormData = z.infer<typeof enterpriseSchema>;
+
 const userTypes = [
   {
     id: "freelance",
@@ -85,7 +89,7 @@ const ContactPage = () => {
     }
   };
 
-  const form = useForm({
+  const form = useForm<FreelanceFormData | AgencyFormData | EnterpriseFormData>({
     resolver: zodResolver(getFormSchema()),
     defaultValues: {
       name: "",
@@ -95,8 +99,8 @@ const ContactPage = () => {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof freelanceSchema> | z.infer<typeof agencySchema> | z.infer<typeof enterpriseSchema>) => {
-    console.log(data);
+  const onSubmit = (values: FreelanceFormData | AgencyFormData | EnterpriseFormData) => {
+    console.log(values);
     toast({
       title: "Formulaire envoyé !",
       description: "Nous vous recontacterons dans les plus brefs délais.",
@@ -122,7 +126,10 @@ const ContactPage = () => {
                   ? "border-2 border-sand-500 bg-sand-50" 
                   : "border border-sand-200 hover:border-sand-300"
               }`}
-              onClick={() => setUserType(id as UserType)}
+              onClick={() => {
+                setUserType(id as UserType);
+                form.reset();
+              }}
             >
               <div className="flex flex-col items-center text-center gap-4">
                 <Icon className="w-12 h-12 text-sand-500" />
@@ -182,7 +189,7 @@ const ContactPage = () => {
                 <>
                   <FormField
                     control={form.control}
-                    name="expertise"
+                    name={"expertise" as keyof FreelanceFormData}
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Expertise principale</FormLabel>
@@ -195,7 +202,7 @@ const ContactPage = () => {
                   />
                   <FormField
                     control={form.control}
-                    name="experience"
+                    name={"experience" as keyof FreelanceFormData}
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Années d'expérience</FormLabel>
@@ -212,7 +219,7 @@ const ContactPage = () => {
               {(userType === "agency" || userType === "enterprise") && (
                 <FormField
                   control={form.control}
-                  name="company"
+                  name={"company" as keyof (AgencyFormData | EnterpriseFormData)}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Nom de l'entreprise</FormLabel>
@@ -228,7 +235,7 @@ const ContactPage = () => {
               {userType === "agency" && (
                 <FormField
                   control={form.control}
-                  name="consultantsCount"
+                  name={"consultantsCount" as keyof AgencyFormData}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Nombre de consultants</FormLabel>
@@ -244,7 +251,7 @@ const ContactPage = () => {
               {userType === "enterprise" && (
                 <FormField
                   control={form.control}
-                  name="projectDescription"
+                  name={"projectDescription" as keyof EnterpriseFormData}
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Description du projet</FormLabel>
