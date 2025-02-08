@@ -308,10 +308,13 @@ const Index = () => {
               </Button>
             </div>
 
+            <h3 className="text-xl md:text-2xl font-semibold text-sand-900 text-center mt-8 mb-12">
+              Deux alternatives s'offrent à vous
+            </h3>
+
             <div className="mt-12 grid md:grid-cols-2 gap-8 relative">
               <div className="absolute top-8 bottom-8 left-1/2 w-px bg-sand-200 -translate-x-1/2 transform -rotate-6 hidden md:block" />
               
-              {/* Column A */}
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -362,7 +365,6 @@ const Index = () => {
                 </div>
               </motion.div>
 
-              {/* Column B */}
               <motion.div 
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
