@@ -51,7 +51,7 @@ const FreelancesPage = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundImage: `url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
