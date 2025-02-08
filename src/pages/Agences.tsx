@@ -1,9 +1,14 @@
-
 import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Users, BarChart, FileCheck, Rocket, Target, CheckCircle2, PanelTopOpen, UserCheck, Briefcase } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const features = [
   {
@@ -82,6 +87,21 @@ const benefits = [
     title: "Missions qualifiées",
     description: "Accédez à des missions de qualité pour vos experts IT.",
   },
+];
+
+const faqs = [
+  {
+    question: "Mon agence / ESN est-elle en contact avec le client final ?",
+    answer: "Non, Sendu Talent joue le rôle de tiers de confiance entre votre agence et le client. Nous gérons l'ensemble du processus de collaboration et nous assurons le suivi qualitatif des missions tout au long de la prestation."
+  },
+  {
+    question: "Quelle est la nature du contrat entre Sendu Talent et mon agence ?",
+    answer: "Le contrat établit les modalités de collaboration, de mise en relation et de gestion administrative entre votre agence / ESN et Sendu Talent. Nous nous occupons des contrats de mission, de la facturation et des paiements, pour une relation fluide et sécurisée."
+  },
+  {
+    question: "Quel est le coût du référencement de mon agence sur Sendu Talent ?",
+    answer: "Le référencement est totalement gratuit. Notre rémunération est basée uniquement sur le succès, vous ne payez que lorsque vos consultants sont engagés sur une mission."
+  }
 ];
 
 const AgencesPage = () => {
@@ -189,6 +209,41 @@ const AgencesPage = () => {
           <div className="mt-12">
             <Button className="bg-sand-500 hover:bg-sand-600 text-white text-lg px-8 py-6">
               Développez votre activité avec Sendu Talent
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-sand-50">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-sand-900 text-center mb-8">
+            FAQ - Sendu Talent pour les Agences & ESN
+          </h2>
+          
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="bg-white/90 backdrop-blur-sm rounded-lg border border-sand-200 shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-sand-700 px-6">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg text-sand-700 mb-6">
+              🚀 Rejoignez dès maintenant Sendu Talent et développez votre activité avec les meilleurs freelances IT !
+            </p>
+            <Button className="bg-sand-500 hover:bg-sand-600 text-white text-lg px-8 py-6">
+              Commencer maintenant
             </Button>
           </div>
         </div>
