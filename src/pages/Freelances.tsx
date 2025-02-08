@@ -1,3 +1,4 @@
+
 import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -61,12 +62,18 @@ const benefits = [
 ];
 
 const FreelancesPage = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
 
   const slides = [
     '/lovable-uploads/9ba9017d-756d-4cda-98bb-e0bbfa7bdc86.png',
     '/lovable-uploads/b454b838-12ff-4220-9c89-fecc87613dd2.png',
   ];
+
+  useEffect(() => {
+    if (emblaApi) {
+      emblaApi.reInit();
+    }
+  }, [emblaApi]);
 
   return (
     <div className="min-h-screen bg-sand-50">
