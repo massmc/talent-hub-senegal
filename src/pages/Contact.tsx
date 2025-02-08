@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { Building2, UserRound, Building } from "lucide-react";
+import { Building2, UserRound, Building, MapPin, Phone } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
@@ -140,124 +139,144 @@ const ContactPage = () => {
           ))}
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Nom complet</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Votre nom" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input type="email" placeholder="votre@email.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Téléphone</FormLabel>
-                    <FormControl>
-                      <Input placeholder="+221 xx xxx xx xx" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-
-              {userType === "freelance" && (
-                <>
-                  <FormField
-                    control={form.control}
-                    name={"expertise" as keyof FreelanceFormData}
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Expertise principale</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Ex: Développeur Full-Stack" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name={"experience" as keyof FreelanceFormData}
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Années d'expérience</FormLabel>
-                        <FormControl>
-                          <Input type="number" placeholder="Ex: 5" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </>
-              )}
-
-              {(userType === "agency" || userType === "enterprise") && (
+        <div className="grid lg:grid-cols-2 gap-12">
+          <div className="max-w-2xl">
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <FormField
                   control={form.control}
-                  name={"company" as keyof (AgencyFormData | EnterpriseFormData)}
+                  name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nom de l'entreprise</FormLabel>
+                      <FormLabel>Nom complet</FormLabel>
                       <FormControl>
-                        <Input placeholder="Nom de votre entreprise" {...field} />
+                        <Input placeholder="Votre nom" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-              )}
 
-              {userType === "agency" && (
                 <FormField
                   control={form.control}
-                  name={"consultantsCount" as keyof AgencyFormData}
+                  name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nombre de consultants</FormLabel>
+                      <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input type="number" placeholder="Ex: 10" {...field} />
+                        <Input type="email" placeholder="votre@email.com" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-              )}
 
-              {userType === "enterprise" && (
                 <FormField
                   control={form.control}
-                  name={"projectDescription" as keyof EnterpriseFormData}
+                  name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Description du projet</FormLabel>
+                      <FormLabel>Téléphone</FormLabel>
+                      <FormControl>
+                        <Input placeholder="+221 xx xxx xx xx" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                {userType === "freelance" && (
+                  <>
+                    <FormField
+                      control={form.control}
+                      name={"expertise" as keyof FreelanceFormData}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Expertise principale</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Ex: Développeur Full-Stack" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name={"experience" as keyof FreelanceFormData}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Années d'expérience</FormLabel>
+                          <FormControl>
+                            <Input type="number" placeholder="Ex: 5" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </>
+                )}
+
+                {(userType === "agency" || userType === "enterprise") && (
+                  <FormField
+                    control={form.control}
+                    name={"company" as keyof (AgencyFormData | EnterpriseFormData)}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Nom de l'entreprise</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Nom de votre entreprise" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                )}
+
+                {userType === "agency" && (
+                  <FormField
+                    control={form.control}
+                    name={"consultantsCount" as keyof AgencyFormData}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Nombre de consultants</FormLabel>
+                        <FormControl>
+                          <Input type="number" placeholder="Ex: 10" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                )}
+
+                {userType === "enterprise" && (
+                  <FormField
+                    control={form.control}
+                    name={"projectDescription" as keyof EnterpriseFormData}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Description du projet</FormLabel>
+                        <FormControl>
+                          <Textarea 
+                            placeholder="Décrivez brièvement votre projet et vos besoins"
+                            className="min-h-[100px]"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                )}
+
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Message (optionnel)</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Décrivez brièvement votre projet et vos besoins"
+                          placeholder="Votre message"
                           className="min-h-[100px]"
                           {...field}
                         />
@@ -266,35 +285,43 @@ const ContactPage = () => {
                     </FormItem>
                   )}
                 />
-              )}
 
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message (optionnel)</FormLabel>
-                    <FormControl>
-                      <Textarea 
-                        placeholder="Votre message"
-                        className="min-h-[100px]"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
+                <Button 
+                  type="submit" 
+                  className="w-full bg-sand-500 hover:bg-sand-600 text-white"
+                  size="lg"
+                >
+                  Envoyer
+                </Button>
+              </form>
+            </Form>
+          </div>
+
+          <div className="space-y-8">
+            <div className="bg-white rounded-lg shadow-lg p-6 space-y-4">
+              <div className="flex items-center gap-3 text-sand-900">
+                <MapPin className="w-5 h-5 text-sand-500" />
+                <p>Fann Résidence x Mermoz</p>
+              </div>
+              <div className="flex items-center gap-3 text-sand-900">
+                <Phone className="w-5 h-5 text-sand-500" />
+                <p>+221 33 800 00 88</p>
+              </div>
+            </div>
+
+            <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.0674991673164!2d-17.4816223!3d14.7074463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4dc11c8e96bd025d%3A0x89bc766588c8afb9!2sFann%20R%C3%A9sidence%2C%20Dakar%2C%20Senegal!5e0!3m2!1sen!2sfr!4v1710876469811!5m2!1sen!2sfr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
               />
-
-              <Button 
-                type="submit" 
-                className="w-full bg-sand-500 hover:bg-sand-600 text-white"
-                size="lg"
-              >
-                Envoyer
-              </Button>
-            </form>
-          </Form>
+            </div>
+          </div>
         </div>
       </main>
 
