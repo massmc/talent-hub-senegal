@@ -97,7 +97,7 @@ const domains = [
 
 const ExpertiseSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black relative">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ const ExpertiseSection = () => {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
           {domains.map((domain, index) => (
             <motion.div
               key={domain.title}
@@ -146,7 +146,8 @@ const ExpertiseSection = () => {
         </div>
       </div>
       <div 
-        className="absolute bottom-0 left-0 right-0 h-32 bg-[url('/lovable-uploads/fbe57dc2-8aeb-4077-af26-98786330fa38.png')] bg-repeat-x bg-bottom opacity-90"
+        className="absolute bottom-0 left-0 right-0 w-full h-32 bg-[url('/lovable-uploads/fbe57dc2-8aeb-4077-af26-98786330fa38.png')] bg-repeat-x bg-bottom"
+        style={{ backgroundSize: 'auto 100%' }}
       ></div>
     </section>
   );
