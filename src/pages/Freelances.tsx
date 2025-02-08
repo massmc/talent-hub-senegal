@@ -43,8 +43,19 @@ const FreelancesPage = () => {
       <MainNavbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-sand-500 to-terracotta-500">
-        <div className="container mx-auto text-center">
+      <section className="relative pt-32 pb-16 px-4">
+        {/* Background Image with Overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center z-0"
+          style={{ 
+            backgroundImage: "url('/lovable-uploads/photo-1487058792275-0ad4aaf24ca7')",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-sand-500/95 to-terracotta-500/95" />
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Développez votre carrière avec Sendu Talent
           </h1>
@@ -53,15 +64,15 @@ const FreelancesPage = () => {
               Trouvez des missions adaptées à vos compétences et disponibilités, tout en bénéficiant d'un accompagnement personnalisé.
             </p>
             <div className="grid md:grid-cols-3 gap-4 text-white/90 mt-8">
-              <div className="bg-white/10 p-4 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Missions de qualité</h3>
                 <p className="text-sm">Accédez à des projets IT ambitieux auprès d'entreprises sérieuses</p>
               </div>
-              <div className="bg-white/10 p-4 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Zéro frais</h3>
                 <p className="text-sm">Service 100% gratuit pour les freelances</p>
               </div>
-              <div className="bg-white/10 p-4 rounded-lg">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Gestion administrative</h3>
                 <p className="text-sm">On s'occupe de tout, concentrez-vous sur votre expertise</p>
               </div>
