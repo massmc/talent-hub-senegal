@@ -39,4 +39,34 @@ const TalentVerificationSection = () => {
             className="space-y-6 order-1 md:order-1"
           >
             <div className="flex items-start gap-4">
-              <div className="p-3 bg
+              <div className="p-3 bg-sand-100 rounded-lg">
+                <CheckCircle className="w-6 h-6 text-sand-500" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-sand-900 mb-2">Processus de vérification rigoureux</h3>
+                <p className="text-sand-700">
+                  Nos Talent Managers ont doublement vérifié le niveau de compétences techniques, les références, 
+                  les motivations et, le moment venu, de l'intérêt pour votre projet, je reçois les devis et je fais mon choix.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-sand-100 rounded-lg">
+                <Users className="w-6 h-6 text-sand-500" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-sand-900 mb-2">Suivi de qualité</h3>
+                <p className="text-sand-700">
+                  Le suivi et la qualité des missions sont assurés par leurs soins jusqu'à terme du projet.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TalentVerificationSection;

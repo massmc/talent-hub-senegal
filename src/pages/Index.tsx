@@ -7,122 +7,15 @@ import { useState } from "react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const Index = () => {
   const isMobile = useIsMobile();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
 
   const slides = [
     "/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png",
     "/lovable-uploads/c50836e1-bdfe-4a04-8582-c239301103f2.png"
-  ];
-
-  const faqItems = [
-    {
-      question: "Comment trouver un talent sur la plateforme ?",
-      answer: (
-        <div className="space-y-4">
-          <p>Rien de plus simple ! Vous pouvez :</p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Explorer notre <span className="font-semibold">marketplace</span> et sélectionner les profils qui correspondent à vos besoins.</li>
-            <li>Nous confier votre recherche et recevoir une sélection des <span className="font-semibold">meilleurs talents</span> adaptée à votre projet.</li>
-          </ul>
-          <p>Une fois votre choix fait, vous pouvez contacter le talent directement via la plateforme et contractualiser en ligne.</p>
-        </div>
-      )
-    },
-    {
-      question: "Quel type de profils proposez-vous ?",
-      answer: (
-        <div className="space-y-4">
-          <p>Sendu Talent propose une large gamme de professionnels qualifiés dans les domaines suivants :</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              { icon: <Code className="w-5 h-5" />, text: "Développement web et mobile" },
-              { icon: <PenTool className="w-5 h-5" />, text: "Design UX/UI" },
-              { icon: <PieChart className="w-5 h-5" />, text: "Marketing digital & Growth Hacking" },
-              { icon: <Building2 className="w-5 h-5" />, text: "Gestion de projet & Consulting" },
-              { icon: <Server className="w-5 h-5" />, text: "Data Science & Intelligence Artificielle" },
-              { icon: <ShieldCheck className="w-5 h-5" />, text: "Cyber-sécurité & Cloud" }
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-3 text-sand-300">
-                {item.icon}
-                <span>{item.text}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-sand-300 italic">...et bien d'autres compétences en fonction de vos besoins.</p>
-        </div>
-      )
-    },
-    {
-      question: "Existe-t-il une période d'essai ?",
-      answer: "Oui, nous pouvons proposer une période d'essai définie contractuellement afin que vous puissiez valider la collaboration avec le talent sélectionné avant un engagement à long terme."
-    },
-    {
-      question: "Quelle est la durée du préavis pour mettre fin à une mission ?",
-      answer: "La durée du préavis dépend des termes du contrat établi entre vous et le talent. Nous proposons une flexibilité adaptée aux besoins de chaque projet, avec des conditions claires définies en amont."
-    },
-    {
-      question: "Quel type de contrat proposez-vous ?",
-      answer: "Nous mettons en place des Contrats Cadres sécurisés et conformes à la législation. Chaque mission est ensuite formalisée par un avenant spécifique, garantissant la transparence et la sécurité juridique pour toutes les parties."
-    },
-    {
-      question: "Est-il possible de contractualiser directement avec le talent ?",
-      answer: "Non, pour garantir la sécurité et la conformité des missions, toutes les contractualisations passent par Sendu Talent. Cela vous permet de bénéficier de notre gestion administrative simplifiée, d'un cadre juridique clair et d'un suivi opérationnel."
-    },
-    {
-      question: "Quelle est la commission de Sendu Talent ?",
-      answer: (
-        <ul className="space-y-2 list-none">
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-sand-500" />
-            Aucun abonnement, aucun coût pour le Talent.
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-sand-500" />
-            La commission est uniquement à la charge du client et proportionnelle au Tarif Journalier du Talent.
-          </li>
-          <li className="flex items-center gap-2">
-            <CheckCircle className="w-5 h-5 text-sand-500" />
-            Pas de frais cachés : tout est transparent !
-          </li>
-        </ul>
-      )
-    },
-    {
-      question: "Notre démarche RSE",
-      answer: (
-        <div className="space-y-4">
-          <p>Chez <span className="font-semibold">Sendu Talent</span>, nous nous engageons à soutenir l'innovation et le développement des talents en Afrique.</p>
-          <div className="space-y-4">
-            <div className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-sand-500 flex-shrink-0 mt-1" />
-              <div>
-                <p className="font-semibold">Incubation de startups locales</p>
-                <p>Nous accompagnons des jeunes entreprises technologiques et digitales dans leur croissance.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-sand-500 flex-shrink-0 mt-1" />
-              <div>
-                <p className="font-semibold">Implication des talents dans notre communauté</p>
-                <p>Chaque talent engagé et impliqué peut bénéficier d'un modèle participatif et devenir acteur du développement de la plateforme.</p>
-              </div>
-            </div>
-          </div>
-          <p className="font-semibold mt-4">Avec Sendu Talent, vous ne recrutez pas seulement un talent, vous contribuez à un écosystème durable et innovant ! 🚀</p>
-        </div>
-      )
-    }
   ];
 
   return (
@@ -523,60 +416,6 @@ const Index = () => {
               </Button>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24 bg-sand-50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-2xl md:text-4xl font-bold text-sand-900 mb-4">FAQ - Sendu Talent</h2>
-            <p className="text-sand-700 text-lg max-w-2xl mx-auto">
-              Trouvez les réponses à vos questions les plus fréquentes
-            </p>
-          </motion.div>
-
-          <div className="max-w-3xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="bg-white rounded-xl p-6 shadow-lg border border-sand-200"
-            >
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <AccordionItem 
-                    key={index} 
-                    value={`item-${index}`}
-                    className="border-b border-sand-200 last:border-b-0"
-                  >
-                    <AccordionTrigger className="text-left text-sand-900 hover:text-sand-700 transition-colors">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sand-700">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center mt-12"
-            >
-              <p className="text-sand-700 mb-6">Vous avez d'autres questions ?</p>
-              <Button className="bg-sand-500 hover:bg-sand-600 text-white">
-                Contactez-nous
-              </Button>
-            </motion.div>
-          </div>
         </div>
       </section>
 
