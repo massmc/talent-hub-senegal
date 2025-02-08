@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Code, Database, FileStack, GraduationCap, Image, Network, Paintbrush, Palette, PenTool, Shield, Shapes, Smartphone, Target, Terminal, UserCheck } from "lucide-react";
 
@@ -151,13 +150,11 @@ const ExpertiseSection = () => {
           transition={{ duration: 0.8 }}
           className="w-full max-w-4xl mx-auto mb-16"
         >
-          <div className="relative aspect-[16/3]">
-            <img 
-              src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
-              alt="Motif décoratif"
-              className="w-full h-full object-cover object-center"
-            />
-          </div>
+          <img 
+            src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
+            alt="Motif décoratif"
+            className="w-full h-[100px] object-contain"
+          />
         </motion.div>
       </div>
       <div 
