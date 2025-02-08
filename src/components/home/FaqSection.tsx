@@ -18,37 +18,96 @@ const FaqSection = () => {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
-                Comment fonctionne SenduTalent ?
+                Comment trouver un talent sur la plateforme ?
               </AccordionTrigger>
-              <AccordionContent className="text-sand-700 px-6">
-                SenduTalent met en relation les entreprises avec les meilleurs talents freelances du Sénégal. Nous vérifions rigoureusement les compétences et l'expérience de chaque freelance pour garantir des collaborations de qualité.
+              <AccordionContent className="text-sand-700 px-6 space-y-2">
+                <p>Rien de plus simple ! Vous pouvez :</p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li>Explorer notre <strong>marketplace</strong> et sélectionner les profils qui correspondent à vos besoins.</li>
+                  <li>Nous confier votre recherche et recevoir une sélection des <strong>meilleurs talents</strong> adaptée à votre projet.</li>
+                </ul>
+                <p>Une fois votre choix fait, vous pouvez contacter le talent directement via la plateforme et contractualiser en ligne.</p>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
-                Quels types de profils peut-on trouver ?
+                Quel type de profils proposez-vous ?
               </AccordionTrigger>
               <AccordionContent className="text-sand-700 px-6">
-                Nous proposons une large gamme de profils spécialisés : développeurs, designers UI/UX, experts marketing digital, chefs de projet et bien d'autres. Tous nos talents sont des professionnels expérimentés dans leur domaine.
+                <p className="mb-2">Sendu Talent propose une large gamme de professionnels qualifiés dans les domaines suivants :</p>
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>Développement web et mobile</strong></li>
+                  <li><strong>Design UX/UI</strong></li>
+                  <li><strong>Marketing digital & Growth Hacking</strong></li>
+                  <li><strong>Gestion de projet & Consulting</strong></li>
+                  <li><strong>Data Science & Intelligence Artificielle</strong></li>
+                  <li><strong>Cyber-sécurité & Cloud</strong></li>
+                </ul>
+                <p className="mt-2">…et bien d'autres compétences en fonction de vos besoins.</p>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
-                Comment sont sélectionnés les freelances ?
+                Existe-t-il une période d'essai ?
               </AccordionTrigger>
               <AccordionContent className="text-sand-700 px-6">
-                Notre processus de sélection comprend plusieurs étapes : vérification des références, tests techniques, entretiens approfondis et évaluation continue des performances. Seuls les meilleurs talents sont admis dans notre réseau.
+                Oui, nous pouvons proposer une <strong>période d'essai définie contractuellement</strong> afin que vous puissiez valider la collaboration avec le talent sélectionné avant un engagement à long terme.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
               <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
-                Quels sont les délais pour trouver un freelance ?
+                Quelle est la durée du préavis pour mettre fin à une mission ?
               </AccordionTrigger>
               <AccordionContent className="text-sand-700 px-6">
-                En général, nous pouvons vous proposer des profils correspondants à vos besoins en moins de 48 heures. Le processus complet de recrutement peut prendre entre 1 et 2 semaines selon vos critères spécifiques.
+                La durée du préavis dépend des termes du <strong>contrat établi entre vous et le talent</strong>. Nous proposons une flexibilité adaptée aux besoins de chaque projet, avec des conditions claires définies en amont.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+              <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
+                Quel type de contrat proposez-vous ?
+              </AccordionTrigger>
+              <AccordionContent className="text-sand-700 px-6">
+                Nous mettons en place des <strong>Contrats Cadres</strong> sécurisés et conformes à la législation. Chaque mission est ensuite formalisée par un <strong>avenant spécifique</strong>, garantissant la transparence et la sécurité juridique pour toutes les parties.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+              <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
+                Est-il possible de contractualiser directement avec le talent ?
+              </AccordionTrigger>
+              <AccordionContent className="text-sand-700 px-6">
+                Non, pour garantir la sécurité et la conformité des missions, <strong>toutes les contractualisations passent par Sendu Talent</strong>. Cela vous permet de bénéficier de notre <strong>gestion administrative simplifiée</strong>, d'un cadre juridique clair et d'un suivi opérationnel.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+              <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
+                Quelle est la commission de Sendu Talent ?
+              </AccordionTrigger>
+              <AccordionContent className="text-sand-700 px-6">
+                <ul className="list-disc pl-6 space-y-1">
+                  <li><strong>Aucun abonnement, aucun coût pour le Talent.</strong></li>
+                  <li><strong>La commission est uniquement à la charge du client et proportionnelle au Tarif Journalier du Talent.</strong></li>
+                  <li><strong>Pas de frais cachés : tout est transparent !</strong></li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="bg-white/80 backdrop-blur-sm rounded-lg border border-sand-200">
+              <AccordionTrigger className="text-sand-900 hover:text-sand-500 hover:no-underline px-6">
+                Notre démarche RSE
+              </AccordionTrigger>
+              <AccordionContent className="text-sand-700 px-6 space-y-4">
+                <p>Chez <strong>Sendu Talent</strong>, nous nous engageons à soutenir l'innovation et le développement des talents en Afrique.</p>
+                <div className="space-y-2">
+                  <p>✅ <strong>Incubation de startups locales</strong> : Nous accompagnons des <strong>jeunes entreprises technologiques</strong> et digitales dans leur croissance.</p>
+                  <p>✅ <strong>Implication des talents dans notre communauté</strong> : Chaque talent engagé et impliqué peut bénéficier d'un <strong>modèle participatif</strong> et devenir acteur du développement de la plateforme.</p>
+                </div>
+                <p>Avec Sendu Talent, vous ne recrutez pas seulement un talent, <strong>vous contribuez à un écosystème durable et innovant !</strong> 🚀</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
