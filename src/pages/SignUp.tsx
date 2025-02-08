@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -195,8 +194,19 @@ const SignUp = () => {
                   )}
                 />
 
-                <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? "Création en cours..." : "Créer mon compte"}
+                <Button 
+                  type="submit" 
+                  className="w-full bg-sand-500 hover:bg-sand-600 text-white font-semibold py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" 
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <div className="flex items-center justify-center gap-2">
+                      <span className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></span>
+                      <span>Création en cours...</span>
+                    </div>
+                  ) : (
+                    "Créer mon compte"
+                  )}
                 </Button>
               </form>
             </Form>
