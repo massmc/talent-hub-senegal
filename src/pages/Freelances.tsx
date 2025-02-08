@@ -43,7 +43,7 @@ const FreelancesPage = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-4">
-        {/* Background Image with Overlay */}
+        {/* Background Image */}
         <div 
           style={{
             position: 'absolute',
@@ -53,9 +53,7 @@ const FreelancesPage = () => {
             backgroundPosition: 'center',
             zIndex: 0,
           }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-sand-500/80 to-terracotta-500/80" />
-        </div>
+        />
 
         {/* Content */}
         <div className="container mx-auto text-center relative z-10">
