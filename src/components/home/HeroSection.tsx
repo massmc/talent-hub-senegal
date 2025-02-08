@@ -24,7 +24,9 @@ const HeroSection = () => {
                 <div 
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ 
-                    backgroundImage: `url(${slide})`
+                    backgroundImage: `url(${slide})`,
+                    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                    backgroundBlendMode: 'multiply'
                   }}
                 />
               </div>
@@ -42,17 +44,15 @@ const HeroSection = () => {
               transition={{ duration: 0.8 }}
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 leading-tight"
             >
-              <span className="text-sand-100">Trouvez rapidement les</span>{" "}
-              <span className="text-ochre-300">meilleurs talents africains</span>{" "}
-              <span className="text-sand-100">pour</span>{" "}
-              <span className="text-terracotta-400">accélérer vos projets</span>
+              <span className="text-white">Trouvez rapidement les meilleurs talents africains pour </span>
+              <span className="text-ochre-300">accélérer vos projets</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-base md:text-lg text-sand-200 mb-4 md:mb-6 leading-relaxed"
+              className="text-base md:text-lg text-white mb-4 md:mb-6 leading-relaxed"
             >
               Avec <span className="text-ochre-300 font-semibold">Sendu Talent</span>, accédez à une vaste communauté de freelances et consultants digitaux, principalement basés au Sénégal, et profitez d'une expertise locale avec une portée internationale. 🚀
             </motion.p>
