@@ -151,16 +151,18 @@ const ExpertiseSection = () => {
           transition={{ duration: 0.8 }}
           className="w-full max-w-4xl mx-auto mb-16"
         >
-          <img 
-            src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
-            alt="Motif décoratif"
-            className="w-full h-auto"
-          />
+          <div className="relative aspect-[16/3]">
+            <img 
+              src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
+              alt="Motif décoratif"
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </motion.div>
       </div>
       <div 
-        className="absolute bottom-0 left-0 right-0 w-full h-12 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-100"
-        style={{ backgroundSize: 'contain' }}
+        className="absolute bottom-0 left-0 right-0 w-full h-24 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-100"
+        style={{ backgroundSize: 'auto 100%' }}
       ></div>
     </section>
   );
