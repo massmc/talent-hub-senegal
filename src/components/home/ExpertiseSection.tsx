@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Code, Database, FileStack, GraduationCap, Image, Network, Paintbrush, Palette, PenTool, Shield, Shapes, Smartphone, Target, Terminal, UserCheck } from "lucide-react";
 
@@ -152,14 +153,14 @@ const ExpertiseSection = () => {
         >
           <img 
             src="/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png" 
-            alt="Motif décoratif"
-            className="w-full h-[100px] object-contain"
+            alt="Motif géométrique décoratif"
+            className="w-full h-[60px] object-contain opacity-70"
           />
         </motion.div>
       </div>
       <div 
-        className="absolute bottom-0 left-0 right-0 w-full h-24 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-100"
-        style={{ backgroundSize: 'auto 100%' }}
+        className="absolute bottom-0 left-0 right-0 w-full h-24 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom opacity-30"
+        style={{ backgroundSize: '400px auto' }}
       ></div>
     </section>
   );
