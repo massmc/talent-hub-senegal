@@ -1,8 +1,7 @@
-
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Briefcase, Handshake, Lightbulb, MessageSquare, Users } from "lucide-react";
+import { Award, Briefcase, BookOpen, Handshake, Lightbulb, MessageSquare, Users } from "lucide-react";
 
 const benefits = [
   {
@@ -114,6 +113,52 @@ const FreelancesPage = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comment ça marche Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Comment ça marche ?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Rejoindre SenduTalent en tant que freelance, c'est simple et rapide
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
+                <BookOpen className="w-8 h-8 text-sand-500" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">1. Créez votre profil</h3>
+              <p className="text-gray-600">
+                Inscrivez-vous gratuitement et complétez votre profil avec vos compétences et expériences.
+              </p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
+                <Users className="w-8 h-8 text-sand-500" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">2. Validation du profil</h3>
+              <p className="text-gray-600">
+                Notre équipe examine votre profil et valide vos compétences pour garantir la qualité.
+              </p>
+            </div>
+            
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
+                <Handshake className="w-8 h-8 text-sand-500" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">3. Recevez des missions</h3>
+              <p className="text-gray-600">
+                Accédez à des opportunités exclusives et choisissez les missions qui vous correspondent.
+              </p>
+            </div>
           </div>
         </div>
       </section>
