@@ -15,7 +15,7 @@ const HeroSection = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
 
   return (
-    <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
+    <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-sand-900">
       <div className="absolute inset-0 overflow-hidden">
         <div ref={emblaRef} className="h-full">
           <div className="flex h-full">
@@ -28,6 +28,7 @@ const HeroSection = () => {
                     filter: 'brightness(0.4)'
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-b from-sand-900/60 to-sand-900/90" />
               </div>
             ))}
           </div>
@@ -44,7 +45,7 @@ const HeroSection = () => {
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 mb-3 md:mb-4 leading-tight"
             >
               Trouvez rapidement les talents offshore pour{" "}
-              <span className="text-sand-300">booster vos projets</span>
+              <span className="text-ochre-300">booster vos projets</span>
             </motion.h1>
             
             <motion.p
@@ -67,10 +68,10 @@ const HeroSection = () => {
                 <Input 
                   type="text"
                   placeholder="Essayez 'Java', 'React', 'Python'..."
-                  className="pl-10 py-3 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full"
+                  className="pl-10 py-3 bg-sand-800/30 border-sand-700/50 text-sand-100 placeholder:text-sand-400 w-full african-border"
                 />
               </div>
-              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3 w-full sm:w-auto">
+              <Button className="african-button">
                 Rechercher
               </Button>
             </motion.div>
@@ -82,4 +83,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
