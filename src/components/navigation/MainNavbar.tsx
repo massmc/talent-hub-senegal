@@ -6,7 +6,6 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Link, useLocation } from "react-router-dom";
 
 const menuItems = [
-  { label: "À propos de nous", path: "/a-propos" },
   { label: "Agences / ESN", path: "/agences" },
   { label: "Freelances", path: "/freelances" },
   { label: "Marketplace", path: "/marketplace" },
@@ -87,4 +86,3 @@ const MainNavbar = () => {
 };
 
 export default MainNavbar;
-
