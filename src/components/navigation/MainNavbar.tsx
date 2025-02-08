@@ -64,6 +64,21 @@ const MainNavbar = () => {
                     {item.label}
                   </Link>
                 ))}
+                <div className="flex flex-col space-y-2 pt-2">
+                  <Link to="/inscription" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button 
+                      variant="outline" 
+                      className="w-full bg-black text-white border-2 border-white hover:bg-black/80"
+                    >
+                      Créer un compte
+                    </Button>
+                  </Link>
+                  <Link to="/connexion" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button className="w-full bg-sand-500 hover:bg-sand-600 text-white">
+                      Se connecter
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           )}
@@ -77,9 +92,11 @@ const MainNavbar = () => {
                 {isMobile ? "Créer" : "Créer un compte"}
               </Button>
             </Link>
-            <Button className="bg-sand-500 hover:bg-sand-600 text-white text-sm md:text-base px-2 md:px-4">
-              {isMobile ? "Login" : "Se connecter"}
-            </Button>
+            <Link to="/connexion">
+              <Button className="bg-sand-500 hover:bg-sand-600 text-white text-sm md:text-base px-2 md:px-4">
+                {isMobile ? "Login" : "Se connecter"}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
