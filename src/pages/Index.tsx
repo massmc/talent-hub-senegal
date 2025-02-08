@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, PieChart, Building2, HandshakeIcon, Settings, Server, Globe2, ShieldCheck, RocketIcon, AArrowUpRight } from "lucide-react";
+import { Search, Menu, Briefcase, UserCheck, Target, FileStack, GraduationCap, Code, Smartphone, Database, Terminal, Network, Shield, Palette, Paintbrush, Image, Shapes, PenTool, CheckCircle, Users, PieChart, Building2, HandshakeIcon, Settings, Server, Globe2, ShieldCheck, RocketIcon, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useIsMobile } from "@/hooks/use-mobile";
