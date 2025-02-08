@@ -1,3 +1,4 @@
+
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,15 +44,19 @@ const FreelancesPage = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-4">
-        {/* Background Image */}
         <div 
           style={{
             position: 'absolute',
-            inset: 0,
-            backgroundImage: "url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url('/lovable-uploads/d5e9024b-ee43-4972-a507-6b180bf93b22.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            zIndex: 0,
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '100%'
           }}
         />
 
