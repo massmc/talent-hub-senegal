@@ -13,7 +13,7 @@ const MarketplacePage = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')",
-            opacity: 0.2 
+            opacity: 0.8 
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-sand-900/80 to-sand-900" />
