@@ -6,7 +6,7 @@ const TalentVerificationSection = () => {
   return (
     <section className="py-8 md:py-12 bg-sand-50 relative overflow-hidden">
       {/* Pattern à droite */}
-      <div className="absolute right-0 top-0 h-full w-24 hidden md:block">
+      <div className="absolute right-4 top-0 h-full w-24 hidden md:block">
         <img 
           src="/lovable-uploads/0f0462ae-75cb-4e4a-9c7d-f553a02b891c.png"
           alt="Motif décoratif"
@@ -79,3 +79,4 @@ const TalentVerificationSection = () => {
 };
 
 export default TalentVerificationSection;
+
