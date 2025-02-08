@@ -30,7 +30,6 @@ const WhySection = () => {
             </div>
           </div>
           <div className="relative mt-8 md:mt-0">
-            <div className="absolute inset-0 bg-[url('/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png')] opacity-60"></div>
             <img 
               src="/lovable-uploads/c68d2c9d-9e23-48e5-90d9-76e5569af184.png"
               alt="Professional consultant working on a digital project"
