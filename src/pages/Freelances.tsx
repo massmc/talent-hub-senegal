@@ -77,63 +77,7 @@ const FreelancesPage = () => {
   return (
     <div className="min-h-screen bg-sand-50">
       <MainNavbar />
-
-      {/* Header Section */}
-      <header className="bg-sand-900 relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/lovable-uploads/1bb877b9-9317-4866-854c-638c5b4313bf.png')`,
-            backgroundBlendMode: 'multiply',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-sand-800/50 to-sand-900/50" />
-        <div className="container mx-auto px-4 py-8 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-left space-y-4 max-w-xl">
-              <h1 className="text-3xl md:text-4xl font-bold text-sand-100 animate-fade-in">
-                Bienvenue sur SenduTalent
-              </h1>
-              <p className="text-lg text-sand-200 leading-relaxed animate-fade-in">
-                La plateforme qui connecte les meilleurs talents freelances avec des projets ambitieux. 
-                Découvrez des opportunités exceptionnelles et faites partie de notre communauté d'experts.
-              </p>
-              <div className="flex flex-wrap gap-4 animate-fade-in">
-                <div className="flex items-center gap-2 text-sand-300">
-                  <Users className="w-5 h-5" />
-                  <span>+2000 Freelances</span>
-                </div>
-                <div className="flex items-center gap-2 text-sand-300">
-                  <Briefcase className="w-5 h-5" />
-                  <span>+500 Projets</span>
-                </div>
-                <div className="flex items-center gap-2 text-sand-300">
-                  <Award className="w-5 h-5" />
-                  <span>98% Satisfaction</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative w-full md:w-auto">
-              <div className="bg-sand-800/50 backdrop-blur-sm p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow animate-fade-in">
-                <h2 className="text-xl font-semibold text-sand-100 mb-4">
-                  Rejoignez-nous dès maintenant
-                </h2>
-                <p className="text-sand-300 mb-6">
-                  Créez votre profil gratuitement et accédez à des opportunités exclusives
-                </p>
-                <Button 
-                  className="w-full bg-sand-500 hover:bg-sand-600 text-white font-medium"
-                  size="lg"
-                >
-                  Commencer maintenant
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-4 min-h-[600px]">
         <div className="absolute inset-0 overflow-hidden">
