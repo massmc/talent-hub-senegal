@@ -1,3 +1,4 @@
+
 import { Search, MapPin, Star, Languages, Euro, Filter } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Slider } from "@/components/ui/slider";
+import FreelancerGrid from "./FreelancerGrid";
 
 const SearchSection = () => {
   const {
@@ -170,6 +172,8 @@ const SearchSection = () => {
           </SheetContent>
         </Sheet>
       </div>
+
+      <FreelancerGrid />
     </div>
   );
 };
