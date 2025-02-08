@@ -35,24 +35,26 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex items-center max-w-4xl">
-          <div className="flex-1">
+          <div className="flex-1 bg-sand-900/80 p-6 rounded-african">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 mb-3 md:mb-4 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 leading-tight"
             >
-              Trouvez rapidement les talents offshore pour{" "}
-              <span className="text-ochre-300">booster vos projets</span>
+              <span className="text-sand-100">Trouvez rapidement les</span>{" "}
+              <span className="text-ochre-300">meilleurs talents africains</span>{" "}
+              <span className="text-sand-100">pour</span>{" "}
+              <span className="text-terracotta-400">accélérer vos projets</span>
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-base md:text-lg text-sand-200 mb-4 md:mb-6"
+              className="text-base md:text-lg text-sand-200 mb-4 md:mb-6 leading-relaxed"
             >
-              Avec SenduTalent, accédez à la plus grande communauté de freelance et de consultants du digital basé au Sénégal.
+              Avec <span className="text-ochre-300 font-semibold">Sendu Talent</span>, accédez à une vaste communauté de freelances et consultants digitaux, principalement basés au Sénégal, et profitez d'une expertise locale avec une portée internationale. 🚀
             </motion.p>
 
             <motion.div
