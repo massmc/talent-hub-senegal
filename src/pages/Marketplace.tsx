@@ -8,7 +8,7 @@ const MarketplacePage = () => {
     <div className="min-h-screen bg-geometric-pattern bg-fixed bg-cover bg-center bg-sand-50 bg-blend-overlay">
       <MainNavbar />
       
-      <div className="relative h-[300px] bg-sand-900 mb-8 md:mb-16">
+      <div className="relative h-[400px] bg-sand-900 mb-8 md:mb-16">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
