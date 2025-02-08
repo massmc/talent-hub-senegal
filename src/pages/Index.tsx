@@ -296,18 +296,13 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border border-sand-200"
           >
-            <div className="flex items-start gap-4 mb-6">
-              <div className="p-3 bg-sand-100 rounded-lg">
-                <FileCheck className="w-6 h-6 text-sand-500" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-semibold text-sand-900 mb-3 text-center">Comment démarrer un projet sur Sendu Talent ?</h3>
-                <p className="text-sand-700 text-lg">
-                  Sendu Talent vous permet de trouver les meilleurs talents pour vos besoins, en vous connectant directement avec des professionnels qualifiés au sein de notre communauté. Vous pouvez soit sélectionner les talents qui correspondent à vos critères, soit nous confier la recherche du profil idéal. Une fois votre choix fait, la contractualisation s'effectue en ligne en toute simplicité, et vous pouvez suivre l'avancement de votre projet en toute transparence via notre plateforme.
-                </p>
-              </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-semibold text-sand-900 mb-3 text-center">Comment démarrer un projet sur Sendu Talent ?</h3>
+              <p className="text-sand-700 text-lg">
+                Sendu Talent vous permet de trouver les meilleurs talents pour vos besoins, en vous connectant directement avec des professionnels qualifiés au sein de notre communauté. Vous pouvez soit sélectionner les talents qui correspondent à vos critères, soit nous confier la recherche du profil idéal. Une fois votre choix fait, la contractualisation s'effectue en ligne en toute simplicité, et vous pouvez suivre l'avancement de votre projet en toute transparence via notre plateforme.
+              </p>
             </div>
-            <div className="text-center">
+            <div className="text-center mt-6">
               <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
                 Démarrer un projet
               </Button>
