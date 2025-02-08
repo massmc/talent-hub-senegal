@@ -5,22 +5,6 @@ import { motion } from "framer-motion";
 const WhySection = () => {
   return (
     <section className="relative py-12 md:py-20 bg-sand-50 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-y-0 right-0 w-24 md:w-32">
-        <img 
-          src="/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png"
-          alt=""
-          className="h-full w-full object-cover opacity-10"
-        />
-      </div>
-      <div className="absolute inset-y-0 left-0 w-24 md:w-32">
-        <img 
-          src="/lovable-uploads/c17a5fb6-c6af-4a4f-b5e9-b977b7ca9108.png"
-          alt=""
-          className="h-full w-full object-cover opacity-10 transform scale-x-[-1]"
-        />
-      </div>
-
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
