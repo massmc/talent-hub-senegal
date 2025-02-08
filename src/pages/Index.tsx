@@ -20,7 +20,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-sand-900">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-sand-700/30">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -79,7 +79,7 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-black">
+      <section className="relative min-h-[calc(25vh+300px)] md:min-h-[calc(50vh+300px)] pt-12 md:pt-16 pb-8 md:pb-10 flex items-center bg-gradient-to-b from-gray-900 to-black">
         <div className="absolute inset-0 overflow-hidden">
           <div ref={emblaRef} className="h-full">
             <div className="flex h-full">
@@ -143,7 +143,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-sand-50">
+      <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
@@ -179,7 +179,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sand-900 to-black">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-gray-900 to-black">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -229,7 +229,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-sand-50">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -420,7 +420,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-black py-16 md:py-24">
+      <section className="bg-gradient-to-b from-gray-900 to-black py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="space-y-16">
             <div className="group relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -428,7 +428,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-2 md:order-1 bg-gray-900/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/30 hover:border-gray-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Search className="w-8 h-8 text-sand-300" />
@@ -472,7 +472,7 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-2 md:order-2 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-2 md:order-2 bg-gray-900/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/30 hover:border-gray-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Shield className="w-8 h-8 text-sand-300" />
@@ -505,18 +505,18 @@ const Index = () => {
                 transition={{ duration: 0.8 }}
                 className="order-2 md:order-2 relative"
               >
-                <div className="absolute inset-0 bg-gradient-to-l from-sand-500/20 to-sand-500/10 rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-l from-gray-500/10 to-transparent rounded-2xl" />
                 <img 
                   src="/lovable-uploads/cb1bdfce-75b6-47c1-8fd3-6900e3382e12.png"
                   alt="Illustration des coûts et tarification"
-                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300 mix-blend-luminosity opacity-90"
                 />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 md:order-1 bg-sand-900/50 p-8 rounded-2xl backdrop-blur-sm border border-sand-700/30 hover:border-sand-500/50 transition-all duration-300"
+                className="order-1 md:order-1 bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/30 hover:border-gray-500/50 transition-all duration-300"
               >
                 <h2 className="text-2xl md:text-3xl font-bold mb-6 text-sand-100 flex items-center gap-3">
                   <Briefcase className="w-8 h-8 text-sand-300" />
