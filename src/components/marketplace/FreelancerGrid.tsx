@@ -31,12 +31,12 @@ interface Freelancer {
   };
 }
 
-// Mock data for development
+// Mock data with African and Senegalese names
 const mockFreelancers: Freelancer[] = [
   {
     id: "1",
-    name: "Sophie Martin",
-    avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    name: "Amadou Diallo",
+    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
     specialization: "Développeur Frontend React",
     experience: {
       years: 5,
@@ -51,9 +51,9 @@ const mockFreelancers: Freelancer[] = [
   },
   {
     id: "2",
-    name: "Thomas Bernard",
-    avatar: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    specialization: "Développeur Backend Node.js",
+    name: "Fatou Sow",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    specialization: "UX/UI Designer",
     experience: {
       years: 3,
       level: "confirmed",
@@ -67,30 +67,14 @@ const mockFreelancers: Freelancer[] = [
   },
   {
     id: "3",
-    name: "Julie Dubois",
-    avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
-    specialization: "UX/UI Designer",
-    experience: {
-      years: 2,
-      level: "junior",
-    },
-    availability: "immediate",
-    dailyRate: 400,
-    rating: {
-      average: 4.2,
-      count: 5,
-    },
-  },
-  {
-    id: "4",
-    name: "Alexandre Petit",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    name: "Moussa Ndiaye",
+    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
     specialization: "DevOps Engineer",
     experience: {
       years: 6,
       level: "expert",
     },
-    availability: "one_month",
+    availability: "immediate",
     dailyRate: 600,
     rating: {
       average: 4.9,
@@ -98,9 +82,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "5",
-    name: "Marie Lambert",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    id: "4",
+    name: "Aïcha Ba",
+    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
     specialization: "Data Scientist",
     experience: {
       years: 4,
@@ -114,47 +98,15 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "6",
-    name: "Lucas Moreau",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-    specialization: "Mobile Developer",
-    experience: {
-      years: 3,
-      level: "confirmed",
-    },
-    availability: "immediate",
-    dailyRate: 480,
-    rating: {
-      average: 4.4,
-      count: 7,
-    },
-  },
-  {
-    id: "7",
-    name: "Emma Roux",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
-    specialization: "Frontend Developer",
-    experience: {
-      years: 2,
-      level: "junior",
-    },
-    availability: "one_month",
-    dailyRate: 380,
-    rating: {
-      average: 4.3,
-      count: 4,
-    },
-  },
-  {
-    id: "8",
-    name: "Hugo Girard",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-    specialization: "Fullstack Developer",
+    id: "5",
+    name: "Omar Sy",
+    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
+    specialization: "Développeur Backend Node.js",
     experience: {
       years: 7,
       level: "expert",
     },
-    availability: "watching",
+    availability: "one_month",
     dailyRate: 580,
     rating: {
       average: 4.7,
@@ -162,9 +114,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "9",
-    name: "Léa Simon",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    id: "6",
+    name: "Mariama Touré",
+    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
     specialization: "Product Manager",
     experience: {
       years: 5,
@@ -178,9 +130,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "10",
-    name: "Gabriel Mercier",
-    avatar: "https://images.unsplash.com/photo-1500048993953-d23a436266cf",
+    id: "7",
+    name: "Ibrahima Fall",
+    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
     specialization: "Cloud Architect",
     experience: {
       years: 8,
@@ -194,9 +146,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "11",
-    name: "Charlotte Dumont",
-    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+    id: "8",
+    name: "Aminata Diop",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
     specialization: "Scrum Master",
     experience: {
       years: 4,
@@ -210,9 +162,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "12",
-    name: "Louis Martin",
-    avatar: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef",
+    id: "9",
+    name: "Modou Faye",
+    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
     specialization: "Security Expert",
     experience: {
       years: 6,
@@ -226,9 +178,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "13",
-    name: "Alice Bertrand",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    id: "10",
+    name: "Rama Seck",
+    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
     specialization: "QA Engineer",
     experience: {
       years: 3,
@@ -242,10 +194,10 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "14",
-    name: "Nathan Leroy",
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
-    specialization: "Blockchain Developer",
+    id: "11",
+    name: "Cheikh Ndoye",
+    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
+    specialization: "Développeur Mobile",
     experience: {
       years: 4,
       level: "expert",
@@ -258,9 +210,9 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
-    id: "15",
-    name: "Sarah Dupont",
-    avatar: "https://images.unsplash.com/photo-1554151228-14d9def656e4",
+    id: "12",
+    name: "Adama Sarr",
+    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
     specialization: "AI Engineer",
     experience: {
       years: 5,
@@ -274,15 +226,63 @@ const mockFreelancers: Freelancer[] = [
     },
   },
   {
+    id: "13",
+    name: "Sokhna Gueye",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    specialization: "Frontend Developer",
+    experience: {
+      years: 3,
+      level: "confirmed",
+    },
+    availability: "immediate",
+    dailyRate: 480,
+    rating: {
+      average: 4.4,
+      count: 7,
+    },
+  },
+  {
+    id: "14",
+    name: "Ousmane Kane",
+    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16c",
+    specialization: "Fullstack Developer",
+    experience: {
+      years: 7,
+      level: "expert",
+    },
+    availability: "watching",
+    dailyRate: 580,
+    rating: {
+      average: 4.7,
+      count: 18,
+    },
+  },
+  {
+    id: "15",
+    name: "Khady Diouf",
+    avatar: "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+    specialization: "DevOps Engineer",
+    experience: {
+      years: 5,
+      level: "expert",
+    },
+    availability: "immediate",
+    dailyRate: 650,
+    rating: {
+      average: 4.8,
+      count: 14,
+    },
+  },
+  {
     id: "16",
-    name: "Maxime Richard",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    name: "Babacar Mbaye",
+    avatar: "https://images.unsplash.com/photo-1578635073897-3809a4a8cfd9",
     specialization: "Systems Architect",
     experience: {
       years: 7,
       level: "expert",
     },
-    availability: "immediate",
+    availability: "one_month",
     dailyRate: 690,
     rating: {
       average: 4.9,
@@ -294,7 +294,7 @@ const mockFreelancers: Freelancer[] = [
 const FreelancerGrid = () => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 9; // Changed to 9 items per page
 
   const toggleFavorite = (id: string) => {
     setFavorites((prev) =>
@@ -345,7 +345,7 @@ const FreelancerGrid = () => {
 
   return (
     <div className="space-y-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentItems.map((freelancer) => (
           <Card
             key={freelancer.id}
@@ -449,4 +449,3 @@ const FreelancerGrid = () => {
 };
 
 export default FreelancerGrid;
-
