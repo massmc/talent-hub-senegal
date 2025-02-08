@@ -1,5 +1,5 @@
 
-import { MainNavbar } from "@/components/navigation/MainNavbar";
+import MainNavbar from "@/components/navigation/MainNavbar";
 import SearchSection from "@/components/marketplace/SearchSection";
 import { FiltersProvider } from "@/components/marketplace/FiltersContext";
 
