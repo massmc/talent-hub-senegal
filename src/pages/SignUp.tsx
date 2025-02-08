@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -89,7 +90,27 @@ const SignUp = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-sand-900">
       <MainNavbar />
-      <div className="container mx-auto px-4 py-24">
+      
+      {/* New Header Section */}
+      <div 
+        className="relative h-64 w-full bg-cover bg-center"
+        style={{ 
+          backgroundImage: 'url("/lovable-uploads/f1e77d49-33a3-4c32-9778-f57dbf50c71a.png")',
+          backgroundBlendMode: 'multiply',
+          backgroundColor: 'rgba(0, 0, 0, 0.6)'
+        }}
+      >
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Rejoignez SenduTalent
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl">
+            Créez votre compte et accédez à une communauté de talents exceptionnels
+          </p>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-12">
         <Card className="max-w-xl mx-auto">
           <CardHeader>
             <CardTitle className="text-2xl text-center text-white">Créer un compte</CardTitle>
