@@ -98,15 +98,6 @@ const domains = [
 const ExpertiseSection = () => {
   return (
     <section className="py-16 md:py-24 bg-black relative overflow-hidden">
-      {/* Top Pattern */}
-      <div className="absolute top-0 left-0 w-full">
-        <img 
-          src="/lovable-uploads/48acf00c-97fc-4c91-bc03-d57944e0f1b4.png" 
-          alt="Motif géométrique" 
-          className="w-full object-cover h-16"
-        />
-      </div>
-
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
