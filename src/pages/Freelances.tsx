@@ -78,8 +78,8 @@ const FreelancesPage = () => {
     <div className="min-h-screen bg-sand-50">
       <MainNavbar />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-4 min-h-[600px]">
+      {/* Hero Section avec dégradé marron-orange */}
+      <section className="relative pt-32 pb-16 px-4 min-h-[600px] bg-gradient-to-br from-sand-500 via-terracotta-500 to-sand-700">
         <div className="absolute inset-0 overflow-hidden">
           <div ref={emblaRef} className="h-full">
             <div className="flex h-full">
