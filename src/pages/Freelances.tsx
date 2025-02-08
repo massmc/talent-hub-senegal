@@ -1,7 +1,17 @@
 import MainNavbar from "@/components/navigation/MainNavbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Briefcase, BookOpen, Handshake, Lightbulb, MessageSquare, Users } from "lucide-react";
+import { 
+  Award, 
+  Briefcase, 
+  Gift, 
+  Handshake, 
+  Lightbulb, 
+  MessageSquare, 
+  Target, 
+  UserPlus, 
+  Users 
+} from "lucide-react";
 
 const benefits = [
   {
@@ -125,38 +135,38 @@ const FreelancesPage = () => {
               Comment ça marche ?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Rejoindre SenduTalent en tant que freelance, c'est simple et rapide
+              Un processus simple en trois étapes pour trouver votre prochaine mission
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
-                <BookOpen className="w-8 h-8 text-sand-500" />
+            <div className="flex flex-col items-center text-center p-6 group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-sand-200 transition-colors">
+                <UserPlus className="w-8 h-8 text-sand-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">1. Créez votre profil</h3>
+              <h3 className="text-xl font-semibold mb-3">1. Inscrivez-vous gratuitement</h3>
               <p className="text-gray-600">
-                Inscrivez-vous gratuitement et complétez votre profil avec vos compétences et expériences.
+                Créez votre profil et passez nos tests de sélection.
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
-                <Users className="w-8 h-8 text-sand-500" />
+            <div className="flex flex-col items-center text-center p-6 group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-sand-200 transition-colors">
+                <Target className="w-8 h-8 text-sand-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">2. Validation du profil</h3>
+              <h3 className="text-xl font-semibold mb-3">2. Définissez votre mission idéale</h3>
               <p className="text-gray-600">
-                Notre équipe examine votre profil et valide vos compétences pour garantir la qualité.
+                Indiquez vos préférences (type de mission, durée, tarif).
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4">
-                <Handshake className="w-8 h-8 text-sand-500" />
+            <div className="flex flex-col items-center text-center p-6 group hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-sand-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-sand-200 transition-colors">
+                <Gift className="w-8 h-8 text-sand-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">3. Recevez des missions</h3>
+              <h3 className="text-xl font-semibold mb-3">3. Recevez des offres sur-mesure</h3>
               <p className="text-gray-600">
-                Accédez à des opportunités exclusives et choisissez les missions qui vous correspondent.
+                Notre équipe sélectionne des opportunités qui correspondent exactement à votre profil et vous accompagne tout au long de la mission.
               </p>
             </div>
           </div>
