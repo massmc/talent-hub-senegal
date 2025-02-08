@@ -445,13 +445,12 @@ const Index = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="order-1 md:order-2 relative"
+                className="order-1 md:order-2 relative flex justify-center items-center"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-sand-500/20 to-sand-500/10 rounded-2xl" />
                 <img 
                   src="/lovable-uploads/dc4dfc1b-ab05-4198-a47c-35e896b99361.png"
                   alt="Illustration de recherche de talents"
-                  className="w-full rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
+                  className="w-4/5 md:w-3/4 h-auto object-contain rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             </div>
