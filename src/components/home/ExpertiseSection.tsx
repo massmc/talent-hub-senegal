@@ -146,7 +146,7 @@ const ExpertiseSection = () => {
         </div>
       </div>
       <div 
-        className="absolute bottom-0 left-0 right-0 w-full h-32 bg-[url('/lovable-uploads/fbe57dc2-8aeb-4077-af26-98786330fa38.png')] bg-repeat-x bg-bottom"
+        className="absolute bottom-0 left-0 right-0 w-full h-32 bg-[url('/lovable-uploads/a270978d-3001-4ffb-851d-bacdaf303def.png')] bg-repeat-x bg-bottom"
         style={{ backgroundSize: 'auto 100%' }}
       ></div>
     </section>
