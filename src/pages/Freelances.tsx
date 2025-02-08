@@ -1,4 +1,3 @@
-
 import MainNavbar from "@/components/navigation/MainNavbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -62,7 +61,7 @@ const benefits = [
 ];
 
 const FreelancesPage = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 5000 })]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const slides = [
     '/lovable-uploads/9ba9017d-756d-4cda-98bb-e0bbfa7bdc86.png',
@@ -81,18 +80,20 @@ const FreelancesPage = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 px-4 min-h-[600px]">
-        <div ref={emblaRef} className="absolute inset-0 overflow-hidden">
-          <div className="flex h-full">
-            {slides.map((slide, index) => (
-              <div key={index} className="relative flex-none w-full h-full">
-                <div 
-                  className="absolute inset-0 bg-center bg-cover transition-opacity duration-500"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${slide}')`,
-                  }}
-                />
-              </div>
-            ))}
+        <div className="absolute inset-0 overflow-hidden">
+          <div ref={emblaRef} className="h-full">
+            <div className="flex h-full">
+              {slides.map((slide, index) => (
+                <div key={index} className="relative flex-none w-full h-full">
+                  <div 
+                    className="absolute inset-0 bg-center bg-cover"
+                    style={{
+                      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${slide}')`,
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
