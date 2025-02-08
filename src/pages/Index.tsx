@@ -303,12 +303,6 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="text-center my-8">
-              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
-                Démarrer un projet
-              </Button>
-            </div>
-
             <h3 className="text-xl md:text-2xl font-semibold text-sand-900 text-center mb-12">
               Deux alternatives s'offrent à vous
             </h3>
@@ -415,6 +409,12 @@ const Index = () => {
                   </motion.div>
                 </div>
               </motion.div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Button className="bg-sand-500 hover:bg-sand-600 text-white px-8 py-3">
+                Démarrer un projet
+              </Button>
             </div>
           </motion.div>
         </div>
