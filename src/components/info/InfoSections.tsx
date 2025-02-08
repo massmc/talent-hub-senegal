@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Search, Shield, Briefcase } from "lucide-react";
+import { Search, Shield, Briefcase, CheckCircle } from "lucide-react";
 
 export const InfoSections = () => {
   return (
@@ -71,4 +71,14 @@ export const InfoSections = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-sand-500 flex-shrink-0 mt-1" />
                   <p className="text-sand-300">
-                    <span className="text-sand-100 font-semibold">Protection juridique :</span> Notre contrat cadre vous protège contre le prêt illicite de main-d'œuvre, le dé
+                    <span className="text-sand-100 font-semibold">Protection juridique :</span> Notre contrat cadre vous protège contre le prêt illicite de main-d'œuvre, le débauchage et la requalification.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
