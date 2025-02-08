@@ -80,7 +80,15 @@ const FreelancesPage = () => {
 
       {/* Header Section */}
       <header className="bg-sand-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sand-800 to-sand-900 opacity-90" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('/lovable-uploads/1bb877b9-9317-4866-854c-638c5b4313bf.png')`,
+            backgroundBlendMode: 'multiply',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-sand-800/50 to-sand-900/50" />
         <div className="container mx-auto px-4 py-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-left space-y-4 max-w-xl">
